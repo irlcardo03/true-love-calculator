@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO META TAGS -->
+    <title>Savage Love Calculator - Brutal Roast & Compatibility Test</title>
+    <meta name="description" content="The most savage love calculator on the internet. Get roasted based on your real compatibility. Gen Z vibes only, no mercy. Calculate your love score now!">
+    <meta name="keywords" content="savage love calculator, love test, gen z roast, funny love calculator, compatibility, brutal honesty">
+    
+    <!-- FAVICON -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💔</text></svg>">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* --- CUTE GLASSMORPHISM CSS --- */
+        :root {
+            --primary-pink: #ff758c;
+            --primary-purple: #ff7eb3;
+            --bg-grad: linear-gradient(135deg, #fccb90 0%, #d57eeb 100%);
+            --glass: rgba(255, 255, 255, 0.25);
+            --glass-border: rgba(255, 255, 255, 0.4);
+            --text-dark: #4a4a4a;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--bg-grad);
+            color: var(--text-dark);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            padding-bottom: 80px; /* Space for sticky ad */
+            overflow-x: hidden;
+        }
+
+        /* Glass Container */
+        .glass-card {
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 40px 30px;
+            width: 100%;
+            max-width: 450px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+            text-align: center;
+            position: relative;
+            z-index: 10;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-weight: 900;
+            font-size: 32px;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        p.subtitle { font-size: 14px; color: #555; margin-bottom: 25px; font-weight: 500; }
+
+        input {
+            width: 100%;
+            padding: 15px 20px;
+            background: rgba(255, 255, 255, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            color: #333;
+            font-size: 16px;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+            transition: 0.3s;
+        }
+
+        input:focus { background: rgba(255, 255, 255, 0.9); border-color: var(--primary-pink); }
+        input::placeholder { color: #888; }
+
+        .date-inputs { display: flex; gap: 15px; margin-bottom: 20px; }
+        .input-group { margin-bottom: 15px; position: relative; }
+        
+        label { display: block; text-align: left; font-size: 12px; color: #666; margin-bottom: 5px; font-weight: 700; text-transform: uppercase; }
+
+        button.main-btn {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 12px;
+            background: linear-gradient(45deg, #ff758c, #ff7eb3);
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(255, 118, 136, 0.4);
+        }
+
+        button.main-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(255, 118, 136, 0.6); }
+        button.main-btn:active { transform: scale(0.98); }
+
+        /* Result Section */
+        .result-area {
+            margin-top: 30px;
+            display: none;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        
+        .result-area.show {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .score-circle {
+            width: 140px; height: 140px; border-radius: 50%; margin: 0 auto 20px;
+            background: linear-gradient(45deg, #ffc3a0, #ffafbd);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 40px; font-weight: 900; color: #fff;
+            box-shadow: 0 10px 25px rgba(255, 118, 136, 0.3);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        @keyframes popIn {
+            0% { transform: scale(0); }
+            100% { transform: scale(1); }
+        }
+
+        .verdict-title {
+            font-size: 20px;
+            font-weight: 900;
+            color: #333;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            line-height: 1.3;
+        }
+        
+        .verdict-text {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #444;
+            margin-bottom: 25px;
+            padding: 0 5px;
+            min-height: 80px;
+            font-weight: 500;
+        }
+        
+        /* Loading Spinner */
+        .loader {
+            display: none;
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: #ff758c;
+            margin: 20px auto;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* Blur Feature Ad */
+        .blur-feature {
+            background: rgba(255,255,255,0.4);
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+        .blur-overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(255,255,255,0.8);
+            backdrop-filter: blur(5px);
+            display: flex; align-items: center; justify-content: center;
+            z-index: 2;
+            font-weight: 700;
+            color: var(--primary-purple);
+            font-size: 14px;
+            transition: opacity 0.3s;
+        }
+        .blur-content { filter: blur(3px); pointer-events: none; user-select: none; }
+        
+        /* Floating Sticky Ad */
+        .sticky-ad {
+            position: fixed; bottom: 0; left: 0; width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 12px 20px;
+            text-align: center; z-index: 999;
+            border-top: 1px solid #fff;
+            display: flex; align-items: center; justify-content: center; gap: 15px;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+        }
+        .sticky-ad span { font-size: 14px; font-weight: 600; color: #333; }
+        .sticky-ad a {
+            background: linear-gradient(45deg, #ff758c, #ff7eb3);
+            color: white; padding: 8px 20px; border-radius: 20px;
+            text-decoration: none; font-weight: 700; font-size: 13px;
+            white-space: nowrap; animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+
+        .watermark { font-size: 10px; color: rgba(0,0,0,0.2); margin-top: 15px; display: block; font-weight: 700; }
+        
+        /* Action Buttons */
+        .action-btn {
+            background: white;
+            color: #333;
+            border: 2px solid #fff;
+            padding: 12px;
+            width: 100%;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-bottom: 10px;
+            transition: 0.2s;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            font-size: 14px;
+        }
+        .action-btn:hover { background: #ff758c; color: white; border-color: #ff758c; }
+
+        /* SEO Content Box */
+        .seo-box {
+            margin-top: 30px;
+            text-align: left;
+            padding: 20px;
+            background: rgba(255,255,255,0.3);
+            border-radius: 12px;
+            font-size: 12px;
+            color: #555;
+            line-height: 1.6;
+        }
+        .seo-box h3 { font-size: 14px; margin-bottom: 8px; color: #333; }
+
+    </style>
+</head>
+<body>
+
+    <!-- MAIN CALCULATOR CARD -->
+    <div class="glass-card" id="mainCard">
+        <h1>Savage Love Calc</h1>
+        <p class="subtitle">Brutal honesty. No feelings spared.</p>
+
+        <div class="input-group">
+            <input type="text" id="name1" placeholder="Your Name (e.g., Simp)">
+        </div>
+        
+        <div class="date-inputs">
+            <div style="flex:1">
+                <label>Your B-Day</label>
+                <input type="date" id="date1">
+            </div>
+            <div style="flex:1">
+                <label>Their B-Day</label>
+                <input type="date" id="date2">
+            </div>
+        </div>
+
+        <div class="input-group">
+            <input type="text" id="name2" placeholder="Crush's Name (e.g., Stacy)">
+        </div>
+
+        <button class="main-btn" onclick="triggerCalculation()">Calculate Truth 💔</button>
+
+        <!-- LOADER -->
+        <div class="loader" id="loader"></div>
+
+        <!-- RESULT SECTION -->
+        <div class="result-area" id="resultArea">
+            <div class="score-circle" id="scoreDisplay">0%</div>
+            
+            <div class="verdict-title" id="verdictTitle">Calculating...</div>
+            <div class="verdict-text" id="verdictText"></div>
+
+            <!-- THE BLUR AD FEATURE -->
+            <div class="blur-feature" onclick="revealBlurAd()">
+                <div class="blur-overlay" id="blurOverlay">
+                    👆 Tap to Reveal Secret Tip
+                </div>
+                <div class="blur-content">
+                    <!-- GLOBALDIGZ BANNER PLACEHOLDER -->
+                    <div style="background:#fff; padding:20px; color:#000; border-radius:8px; border:1px solid #eee;">
+                        <strong>Advertisement</strong><br>
+                        GlobalDigz Offer<br>
+                        <span style="font-size:10px">Click to claim offer</span>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="action-btn" onclick="copyResult()">
+                📋 Copy & Roast Friends
+            </button>
+
+            <span class="watermark">Generated by SavageLoveCalc.com</span>
+        </div>
+
+        <!-- SEO CONTENT (Hidden in plain sight for Google) -->
+        <div class="seo-box">
+            <h3>About This Savage Love Calculator</h3>
+            <p>
+                Are you looking for a <strong>love calculator that roasts you</strong>? You found it. This tool calculates the compatibility between two names and dates of birth to generate a funny, savage result. It's perfect for sending to friends, partners, or that crush you're too scared to talk to. 
+            </p>
+            <p style="margin-top: 8px;">
+                <strong>Features:</strong> 
+                <br>- Name Compatibility Analysis
+                <br>- Zodiac Sign Matching
+                <br>- Brutally Honest "Savage" Roasts
+                <br>- No Mercy Mode enabled.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- FLOATING STICKY AD (Datify) -->
+    <div class="sticky-ad">
+        <span>Stop swiping alone 😏</span>
+        <!-- DATIFY.LINK HERE -->
+        <a href="https://singleheartshere.com/3bqMprsN?aid=gggkgdfxbx&kid=hffggfxkdkx" target="_blank" id="stickyLink">Meet Locals</a>
+    </div>
+
+    <!-- MYLEAD POPUP SCRIPT -->
+    <script type="text/javascript">
+        // Popup Logic
+        setTimeout(function(){
+            var popupShown = sessionStorage.getItem('popupShown');
+            if (!popupShown) {
+                window.open('https://safeoffers.pro/a/KrvpOIkMOHAZ1q', '_blank');
+                sessionStorage.setItem('popupShown', 'true');
+            }
+        }, 3000);
+
+        // =======================================================
+        // ===== PASTE YOUR LINES BELOW ==========================
+        // =======================================================
+        // Just paste them inside the brackets [ ... ]
+        // Make sure they are separated by commas!
+        
+        const savageData = {
+            // 0-9% Lines
+            disaster: [
+                "This match is weaker than my phone battery at 1% 💀",
+                "Bro she checks her phone when you text 😂",
+                "This love is like my internet connection—DISCONNECTED",
+                "Y'all are just two strangers who follow each other on IG",
+                "Run. Fast. Like you stole something 🏃💨",
+                "Her ex is still in her camera roll 💀",
+                "This ain't love, this is DELULU 🤡",
+                "Y'all belong in the friendzone... PERMANENTLY",
+                // 👉 PASTE MORE DISASTER LINES HERE
+            ],
+            // 10-19% Lines
+            embarrassing: [
+                "Bro, this is embarrassing... for YOU 😂",
+                "Y'all are giving 'we met on a dare' energy",
+                "This love is like a group project—you're doing all the work",
+                "She's got more chemistry with her morning coffee",
+                // 👉 PASTE MORE EMBARRASSING LINES HERE
+            ],
+            // 20-29% Lines
+            situationship: [
+                "Y'all are just 'talking'... and that's the problem",
+                "Bro you're the backup plan. The emergency contact she never calls",
+                "This love is like free WiFi—weak signal 📶",
+                "She's posting thirst traps and you're posting quotes 😂",
+                // 👉 PASTE MORE SITUATIONSHIP LINES HERE
+            ],
+            // 30-39% Lines
+            temporary: [
+                "This love is like a Snapchat story—disappears in 24 hours",
+                "Bro, you're happy... for now 💀",
+                "Y'all are giving 'we're together till something better comes along'",
+                // 👉 PASTE MORE TEMPORARY LINES HERE
+            ],
+            // 40-49% Lines
+            midRisky: [
+                "Y'all are mid... like room temperature water",
+                "This relationship is giving 'minimum effort maximum cringe'",
+                "Bro, you're comfortable but not happy. Think about that 💀",
+                // 👉 PASTE MORE MID RISKY LINES HERE
+            ],
+            // 50-59% Lines
+            manageableChaos: [
+                "Y'all are chaos together... but like, manageable chaos 😂",
+                "This love is like a group project—you're passing but barely",
+                // 👉 PASTE MORE MANAGEABLE LINES HERE
+            ],
+            // 60-69% Lines
+            decentFragile: [
+                "Y'all are cute... but like, baby's first relationship cute 👶",
+                "This love is giving 'high school sweethearts who won't make it past freshman year'",
+                // 👉 PASTE MORE DECENT LINES HERE
+            ],
+            // 70-79% Lines
+            strongDangerous: [
+                "Okay okay... y'all might actually make it... or not 💀",
+                "Bro, she's your ride or die... but is she your RIDE or just the UBER?",
+                // 👉 PASTE MORE STRONG LINES HERE
+            ],
+            // 80-89% Lines
+            eliteEgo: [
+                "Y'all are giving 'grandparents who been together 50 years' energy 👴👵",
+                "Bro, she's THE ONE. Lock it down before someone else does 🔒",
+                // 👉 PASTE MORE ELITE LINES HERE
+            ],
+            // 90-100% Lines
+            legendary: [
+                "Y'all are giving 'grandparents who been together 50 years' energy 👴👵",
+                "Bro, she's THE ONE. Lock it down before someone else does 🔒",
+                // 👉 PASTE MORE LEGENDARY LINES HERE
+            ]
+        };
+
+        // =======================================================
+        // ===== LOGIC (Dont touch below) ========================
+        // =======================================================
+
+        function getZodiacSign(day, month) {
+            if (!day || !month) return null;
+            if ((month == 1 && day >= 20) || (month == 2 && day <= 18)) return "Aquarius";
+            if ((month == 2 && day >= 19) || (month == 3 && day <= 20)) return "Pisces";
+            if ((month == 3 && day >= 21) || (month == 4 && day <= 19)) return "Aries";
+            if ((month == 4 && day >= 20) || (month == 5 && day <= 20)) return "Taurus";
+            if ((month == 5 && day >= 21) || (month == 6 && day <= 20)) return "Gemini";
+            if ((month == 6 && day >= 21) || (month == 7 && day <= 22)) return "Cancer";
+            if ((month == 7 && day >= 23) || (month == 8 && day <= 22)) return "Leo";
+            if ((month == 8 && day >= 23) || (month == 9 && day <= 22)) return "Virgo";
+            if ((month == 9 && day >= 23) || (month == 10 && day <= 22)) return "Libra";
+            if ((month == 10 && day >= 23) || (month == 11 && day <= 21)) return "Scorpio";
+            if ((month == 11 && day >= 22) || (month == 12 && day <= 21)) return "Sagittarius";
+            if ((month == 12 && day >= 22) || (month == 1 && day <= 19)) return "Capricorn";
+            return null;
+        }
+
+        function triggerCalculation() {
+            let name1 = document.getElementById('name1').value.trim().toLowerCase();
+            let name2 = document.getElementById('name2').value.trim().toLowerCase();
+
+            if (!name1 || !name2) {
+                alert("Yo, enter the names! Don't be shy 😂");
+                return;
+            }
+
+            document.getElementById('resultArea').classList.remove('show');
+            document.getElementById('loader').style.display = 'block';
+            
+            setTimeout(() => {
+                performCalculation();
+            }, 1500);
+        }
+
+        function performCalculation() {
+            let name1 = document.getElementById('name1').value.trim().toLowerCase();
+            let name2 = document.getElementById('name2').value.trim().toLowerCase();
+            let date1 = document.getElementById('date1').value;
+            let date2 = document.getElementById('date2').value;
+
+            let namesArray = [name1, name2];
+            namesArray.sort();
+            let combinedNames = namesArray[0] + namesArray[1];
+
+            let hash = 0;
+            for (let i = 0; i < combinedNames.length; i++) {
+                hash += combinedNames.charCodeAt(i);
+            }
+
+            let score = hash % 101;
+
+            if (date1 && date2) {
+                let d1 = new Date(date1).getDate();
+                let d2 = new Date(date2).getDate();
+                let modifier = (d1 + d2) % 10;
+                score = (score + modifier) % 101;
+            }
+
+            if (score > 100) score = 100;
+            if (score < 0) score = 0;
+
+            updateUI(score);
+        }
+
+        function updateUI(score) {
+            let title = "";
+            let text = "";
+            let category = "";
+
+            if (score <= 9) category = "disaster";
+            else if (score <= 19) category = "embarrassing";
+            else if (score <= 29) category = "situationship";
+            else if (score <= 39) category = "temporary";
+            else if (score <= 49) category = "midRisky";
+            else if (score <= 59) category = "manageableChaos";
+            else if (score <= 69) category = "decentFragile";
+            else if (score <= 79) category = "strongDangerous";
+            else if (score <= 89) category = "eliteEgo";
+            else category = "legendary";
+
+            let lines = savageData[category];
+            
+            // Pick random line
+            if (lines && lines.length > 0) {
+                text = lines[Math.floor(Math.random() * lines.length)];
+            } else {
+                text = "Error: No lines found for this category.";
+            }
+
+            if (score <= 9) title = "ABSOLUTE DISASTER 💀";
+            else if (score <= 19) title = "EMBARRASSING ATTEMPT 😬";
+            else if (score <= 29) title = "SITUATIONSHIP STARTER PACK 🚩";
+            else if (score <= 39) title = "TEMPORARY HAPPINESS ⏳";
+            else if (score <= 49) title = "MID BUT RISKY ⚠️";
+            else if (score <= 59) title = "MANAGEABLE CHAOS 🌪️";
+            else if (score <= 69) title = "DECENT BUT FRAGILE 🧊";
+            else if (score <= 79) title = "STRONG BUT DANGEROUS 🔥";
+            else if (score <= 89) title = "ELITE BUT EGO RISING 🏆";
+            else title = "LEGENDARY BUT STILL MORTAL 👑";
+
+            document.getElementById('scoreDisplay').innerText = score + "%";
+            document.getElementById('verdictTitle').innerText = title;
+            document.getElementById('verdictText').innerText = text;
+            
+            document.getElementById('loader').style.display = 'none';
+            
+            const resultArea = document.getElementById('resultArea');
+            resultArea.style.display = 'block';
+            void resultArea.offsetWidth; 
+            resultArea.classList.add('show');
+            resultArea.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            document.getElementById('blurOverlay').style.display = 'flex';
+        }
+
+        function revealBlurAd() {
+            window.open('https://www.globaldigz.space/cl/6be31d263dc03f09', '_blank');
+            document.getElementById('blurOverlay').style.display = 'none';
+        }
+
+        function copyResult() {
+            let score = document.getElementById('scoreDisplay').innerText;
+            let title = document.getElementById('verdictTitle').innerText;
+            let text = `I got ${score} (${title}) on the Savage Love Calculator! 💔 Can you survive the truth? Check yours at SavageLoveCalc.com`;
+            
+            navigator.clipboard.writeText(text).then(() => {
+                alert("Copied! Go roast your friends 📋");
+            });
+        }
+    </script>
+</body>
+</html>
