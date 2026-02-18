@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ===== SEO META TAGS (The Secret Sauce for Google) ===== -->
+    <title>Love Calculator & Gen Z Tools Hub - Savage Roasts & More</title>
+    <meta name="description" content="The home of the Savage Love Calculator and Gen Z utility tools. Check compatibility, get roasted, and use fun utilities. No mercy, just vibes.">
+    <meta name="keywords" content="savage love calculator, love calculator, gen z tools, compatibility test, relationship calculator, roast calculator, funny tools, online tools">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yourusername.github.io/" /> <!-- Replace with your actual URL later -->
+
+    <!-- FAVICON (Icon on browser tab) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💖</text></svg>">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* --- CLEAN UI STYLES --- */
+        :root {
+            --primary: #ff758c;
+            --secondary: #ff7eb3;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-main: #333;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            min-height: 100vh;
+        }
+
+        /* --- NAVBAR --- */
+        .navbar {
+            background: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-weight: 900;
+            font-size: 20px;
+            text-decoration: none;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #666;
+            margin-left: 20px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover { color: var(--primary); }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            background: linear-gradient(135deg, #fccb90 0%, #d57eeb 100%);
+            padding: 50px 20px;
+            text-align: center;
+            border-radius: 0 0 30px 30px;
+            margin-bottom: 30px;
+        }
+
+        .hero h1 {
+            font-size: 28px;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: rgba(255,255,255,0.9);
+            font-size: 15px;
+            margin-bottom: 25px;
+        }
+
+        /* --- SEARCH BAR --- */
+        .search-box {
+            max-width: 500px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 12px 20px 12px 45px;
+            border: none;
+            border-radius: 50px;
+            font-size: 14px;
+            font-family: 'Poppins', sans-serif;
+            outline: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 18px;
+            top: 11px;
+            font-size: 18px;
+            color: #ccc;
+        }
+
+        /* --- TOOLS LIST (BANNERS) --- */
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 20px 50px 20px;
+        }
+
+        .section-header {
+            font-size: 16px;
+            font-weight: 700;
+            color: #555;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .tool-banner {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 15px 20px;
+            border-radius: 16px;
+            margin-bottom: 12px;
+            text-decoration: none;
+            color: #333;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid #eee;
+        }
+
+        .tool-banner:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-color: var(--primary);
+        }
+
+        .banner-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .banner-info {
+            flex-grow: 1;
+        }
+
+        .banner-title {
+            font-weight: 700;
+            font-size: 15px;
+            margin-bottom: 2px;
+        }
+
+        .banner-desc {
+            font-size: 12px;
+            color: #888;
+        }
+
+        .banner-arrow {
+            color: #ccc;
+            font-size: 18px;
+            margin-left: 10px;
+        }
+
+        /* SEO CONTENT BOX (Hidden beautiful content) */
+        .seo-content {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            margin-top: 40px;
+            line-height: 1.8;
+            font-size: 14px;
+            color: #555;
+            text-align: center;
+        }
+        .seo-content h2 { font-size: 18px; margin-bottom: 15px; color: #333; }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #aaa;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">💖 LoveTools Hub</a>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Gen Z Utility Tools</h1>
+        <p>Fast, fun, and savage. Pick a tool below.</p>
+        
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="searchInput" placeholder="Search tools...">
+        </div>
+    </section>
+
+    <!-- TOOLS CONTAINER -->
+    <div class="container">
+        <div class="section-header">🔥 Available Tools</div>
+
+        <!-- TOOL 1: SAVAGE CALC -->
+        <a href="savage-love-calculator.html" class="tool-banner">
+            <div class="banner-icon">💔</div>
+            <div class="banner-info">
+                <div class="banner-title">Savage Love Calculator</div>
+                <div class="banner-desc">Get your compatibility score with a brutal roast.</div>
+            </div>
+            <div class="banner-arrow">›</div>
+        </a>
+
+        <!-- TOOL 2: PLACEHOLDER (Password) -->
+        <a href="#" class="tool-banner" style="opacity: 0.6;">
+            <div class="banner-icon" style="background: #eee;">🔐</div>
+            <div class="banner-info">
+                <div class="banner-title">Password Generator</div>
+                <div class="banner-desc">Coming Soon.</div>
+            </div>
+            <div class="banner-arrow">›</div>
+        </a>
+
+        <!-- TOOL 3: PLACEHOLDER (Age) -->
+        <a href="#" class="tool-banner" style="opacity: 0.6;">
+            <div class="banner-icon" style="background: #eee;">🎂</div>
+            <div class="banner-info">
+                <div class="banner-title">Age Calculator</div>
+                <div class="banner-desc">Coming Soon.</div>
+            </div>
+            <div class="banner-arrow">›</div>
+        </a>
+
+        <!-- SEO CONTENT SECTION (Helps Google rank you) -->
+        <div class="seo-content">
+            <h2>What is the Savage Love Calculator?</h2>
+            <p>
+                Welcome to the <strong>Savage Love Calculator</strong>, the ultimate Gen Z tool for checking relationship compatibility. Unlike boring traditional calculators that just give you a number, our tool provides a detailed, brutal roast based on your names and birthdays. Whether you are in a <em>situationship</em>, talking stage, or long-term relationship, get the honest truth about your chemistry. We use advanced algorithms (and a bit of attitude) to calculate your love percentage.
+            </p>
+            <p>
+                Our tools are designed to be fast, mobile-friendly, and fun. We are constantly adding new utilities like password generators and age calculators to make your life easier. Bookmark this page for the best online tools!
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        Made with 💖 | 2024 LoveTools Hub
+    </footer>
+
+    <script>
+        // SEARCH FUNCTIONALITY
+        const searchInput = document.getElementById('searchInput');
+        const banners = document.querySelectorAll('.tool-banner');
+
+        searchInput.addEventListener('keyup', (e) => {
+            const term = e.target.value.toLowerCase();
+            banners.forEach(banner => {
+                const title = banner.querySelector('.banner-title').innerText.toLowerCase();
+                if(title.includes(term)) {
+                    banner.style.display = 'flex';
+                } else {
+                    banner.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
