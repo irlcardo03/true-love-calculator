@@ -1,0 +1,1774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://ss.mrmnd.com/static/0049ae3a-acfb-4c5b-b8c3-cf533eb3b713.js"></script>
+    <script async src="https://ss.mrmnd.com/banner.js"></script>
+    
+    <!-- SEO META TAGS -->
+    <title>Savage Love Calculator 2026 -  Roast & Compatibility Test</title>
+    <meta name="description" content="The most savage love calculator on the internet. Get roasted based on your real compatibility.  vibes only, no mercy.">
+    <meta name="keywords" content="savage love calculator,  love test, true love calculator, roast">
+    
+    <!-- FAVICON -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💔</text></svg>">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* --- CUTE GLASSMORPHISM CSS --- */
+        :root {
+            --primary-pink: #ff758c;
+            --primary-purple: #ff7eb3;
+            --bg-grad: linear-gradient(135deg, #fccb90 0%, #d57eeb 100%);
+            --glass: rgba(255, 255, 255, 0.25);
+            --glass-border: rgba(255, 255, 255, 0.4);
+            --text-dark: #4a4a4a;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--bg-grad);
+            color: var(--text-dark);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            padding-bottom: 80px;
+            overflow-x: hidden;
+        }
+
+        /* Glass Container */
+        .glass-card {
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 40px 30px;
+            width: 100%;
+            max-width: 450px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+            text-align: center;
+            position: relative;
+            z-index: 10;
+            margin-bottom: 20px;
+            overflow: hidden; /* Needed for background watermark */
+        }
+
+        /* --- THE COOL BACKGROUND WATERMARK (Fading/Glitch Effect) --- */
+        .bg-watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-15deg);
+            font-size: 50px;
+            font-weight: 900;
+            color: rgba(255, 255, 255, 0.1);
+            pointer-events: none;
+            z-index: 0;
+            text-align: center;
+            line-height: 1.2;
+            width: 100%;
+            animation: fadePulse 4s infinite;
+            text-shadow: 2px 2px 0px rgba(255, 118, 136, 0.1);
+        }
+        
+        @keyframes fadePulse {
+            0%, 100% { opacity: 0.1; transform: translate(-50%, -50%) rotate(-15deg) scale(1); }
+            50% { opacity: 0.2; transform: translate(-50%, -50%) rotate(-15deg) scale(1.05); }
+        }
+
+        /* Ensure content stays on top */
+        .content-wrapper { position: relative; z-index: 2; }
+
+        h1 {
+            font-weight: 900;
+            font-size: 32px;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        p.subtitle { font-size: 14px; color: #555; margin-bottom: 25px; font-weight: 500; }
+
+        input {
+            width: 100%;
+            padding: 15px 20px;
+            background: rgba(255, 255, 255, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            color: #333;
+            font-size: 16px;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+            transition: 0.3s;
+        }
+
+        input:focus { background: rgba(255, 255, 255, 0.9); border-color: var(--primary-pink); }
+        
+        .date-inputs { display: flex; gap: 15px; margin-bottom: 20px; }
+        .input-group { margin-bottom: 15px; position: relative; }
+        
+        label { display: block; text-align: left; font-size: 12px; color: #666; margin-bottom: 5px; font-weight: 700; text-transform: uppercase; }
+
+        button.main-btn {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 12px;
+            background: linear-gradient(45deg, #ff758c, #ff7eb3);
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(255, 118, 136, 0.4);
+        }
+
+        button.main-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(255, 118, 136, 0.6); }
+        button.main-btn:active { transform: scale(0.98); }
+
+        /* Result Section */
+        .result-area {
+            margin-top: 30px;
+            display: none;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        
+        .result-area.show {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .score-circle {
+            width: 140px; height: 140px; border-radius: 50%; margin: 0 auto 20px;
+            background: linear-gradient(45deg, #ffc3a0, #ffafbd);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 40px; font-weight: 900; color: #fff;
+            box-shadow: 0 10px 25px rgba(255, 118, 136, 0.3);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        @keyframes popIn {
+            0% { transform: scale(0); }
+            100% { transform: scale(1); }
+        }
+
+        /* Text Styling */
+        .verdict-title {
+            font-size: 20px; 
+            font-weight: 900; 
+            color: #333;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        
+        .verdict-text {
+            font-size: 16px; 
+            line-height: 1.6;
+            color: #444;
+            margin-bottom: 25px;
+            padding: 0 5px;
+            min-height: 80px;
+            font-weight: 500; 
+        }
+        
+        /* Loading Spinner */
+        .loader {
+            display: none;
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: #ff758c;
+            margin: 20px auto;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* Blur Feature Ad */
+        .blur-feature {
+            background: rgba(255,255,255,0.4);
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+        .blur-overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(255,255,255,0.8);
+            backdrop-filter: blur(5px);
+            display: flex; align-items: center; justify-content: center;
+            z-index: 2;
+            font-weight: 700;
+            color: var(--primary-purple);
+            font-size: 14px;
+        }
+        .blur-content { filter: blur(3px); pointer-events: none; user-select: none; }
+        
+        /* Floating Sticky Ad */
+        .sticky-ad {
+            position: fixed; bottom: 0; left: 0; width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 12px 20px;
+            text-align: center; z-index: 999;
+            border-top: 1px solid #fff;
+            display: flex; align-items: center; justify-content: center; gap: 15px;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+        }
+        .sticky-ad span { font-size: 14px; font-weight: 600; color: #333; }
+        .sticky-ad a {
+            background: linear-gradient(45deg, #ff758c, #ff7eb3);
+            color: white; padding: 8px 20px; border-radius: 20px;
+            text-decoration: none; font-weight: 700; font-size: 13px;
+            white-space: nowrap; animation: pulse 2s infinite;
+        }
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+
+        /* Bottom Watermark */
+        .watermark-bottom {
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            font-size: 12px;
+            font-weight: 700;
+            color: #555;
+        }
+        .watermark-bottom a {
+            color: var(--primary-pink);
+            text-decoration: none;
+            font-weight: 900;
+        }
+        
+        /* Action Buttons */
+        .action-btn {
+            background: white;
+            color: #333;
+            border: 2px solid #fff;
+            padding: 12px;
+            width: 100%;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-bottom: 10px;
+            transition: 0.2s;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            font-size: 14px;
+        }
+        .action-btn:hover { background: #ff758c; color: white; border-color: #ff758c; }
+
+        /* Full Screen Popup */
+        .popup-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            z-index: 9999;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        .popup-box {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .popup-box h2 { color: #333; margin-bottom: 10px; font-size: 24px; }
+        .popup-box p { color: #666; margin-bottom: 20px; font-size: 14px; }
+        .popup-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(45deg, #ff758c, #ff7eb3);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .popup-close {
+            background: #eee;
+            color: #888;
+            border: none;
+            padding: 10px;
+            border-radius: 8px;
+            width: 100%;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- MAIN CALCULATOR CARD -->
+    <div class="glass-card">
+        <!-- THE COOL BACKGROUND WATERMARK (Fading) -->
+        <div class="bg-watermark">
+            TRUE<br>LOVE<br>CALC
+        </div>
+
+        <div class="content-wrapper">
+            <h1>Savage Love Calc</h1>
+            <p class="subtitle">Brutal honesty. No feelings spared.</p>
+
+            <div class="input-group">
+                <input type="text" id="name1" placeholder="Your Name (e.g., Simp)">
+            </div>
+            
+            <div class="date-inputs">
+                <div style="flex:1">
+                    <label>Your B-Day</label>
+                    <input type="date" id="date1">
+                </div>
+                <div style="flex:1">
+                    <label>Their B-Day</label>
+                    <input type="date" id="date2">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="name2" placeholder="Crush's Name (e.g., Stacy)">
+            </div>
+
+            <button class="main-btn" onclick="triggerCalculation()">Calculate Truth 💔</button>
+
+            <!-- LOADER -->
+            <div class="loader" id="loader"></div>
+
+            <!-- RESULT SECTION -->
+            <div class="result-area" id="resultArea">
+                <div class="score-circle" id="scoreDisplay">0%</div>
+                
+                <div class="verdict-title" id="verdictTitle">Calculating...</div>
+                <div class="verdict-text" id="verdictText"></div>
+
+                <!-- THE BLUR AD FEATURE -->
+                <div class="blur-feature" onclick="revealBlurAd()">
+                    <div class="blur-overlay" id="blurOverlay">
+                        👆 Tap to Reveal Secret Tip
+                    </div>
+                    <div class="blur-content">
+                        <div style="background:#fff; padding:20px; color:#000; border-radius:8px; border:1px solid #eee;">
+                            <strong>Advertisement</strong><br>
+                            GlobalDigz Offer
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="action-btn" onclick="copyResult()">
+                    📋 Copy & Roast Friends
+                </button>
+
+                <!-- BOTTOM WATERMARK -->
+                <div class="watermark-bottom">
+                    Made in 💖 <a href="https://true-love-calculator.vercel.app" target="_blank">true-love-calculator.vercel.app</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOATING STICKY AD -->
+    <div class="sticky-ad">
+        <span>Stop swiping alone 😏</span>
+        <a href="https://singleheartshere.com/3bqMprsN?aid=gggkgdfxbx&kid=hffggfxkdkx" target="_blank">Meet Locals</a>
+    </div>
+
+    <!-- FULL SCREEN POPUP -->
+    <div class="popup-overlay" id="popupAd">
+        <div class="popup-box">
+            <h2>Are You Single? 😂</h2>
+            <p>Don't scroll like a lost singular guy. Meet local singles near you now!</p>
+            <a href="https://safeoffers.pro/a/KrvpOIkMOHAZ1q" target="_blank" class="popup-btn" onclick="closePopup()">Yes, Show Me</a>
+            <button class="popup-close" onclick="closePopup()">No Thanks</button>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        
+        // --- SAVAGE LINES BY PERCENTAGE ---
+        // 👇👇 ADD YOUR LINES INSIDE THE BRACKETS BELOW 👇👇
+
+        const linesData = {
+            
+            // 0–9% → ABSOLUTE DISASTER 💀
+            disaster: [
+                "This match is weaker than my phone battery at 1% 💀",
+                "Bro she checks her phone when you text 😂",
+                "Run. Fast. Like you stole something 🏃💨",
+               "Bruh this love is like my morning erection... gone in 60 seconds 💀",
+"Y'all are giving 'roommates who hate each other' energy",
+"Bro she checks her phone when you kiss her 😭",
+"This match is weaker than my grandpa's WiFi signal",
+"Y'all are just two strangers who accidentally followed each other",
+"Run before she runs your pockets and your mental health 🏃💨",
+"Her ex is still in her camera roll... and her heart 💀",
+"This ain't love this is DELULU CENTRAL STATION",
+"Y'all belong in the friendzone... in different countries",
+"Even your mom said 'baby you can do better' and she loves everyone",
+"Bro you're the placeholder till her situationship becomes official",
+"This relationship is giving 'surviving not thriving' and it's not even surviving",
+"Y'all argue about stuff that happened during COVID lockdown 💀",
+"She's posting sad songs on her story... and they're ALL about you",
+"This percentage is lower than your data balance after watching porn",
+"Bro love didn't knock... it kicked the door and called the police 🚓",
+"Y'all are just trauma bonding and calling it love",
+"Even ChatGPT said 'I can't help you with this one'",
+"She's keeping you on delivered for 3 weeks... now you know why 💀",
+"This match is giving 'I guess' energy but even 'I guess' is too generous",
+"Bro you're the emergency contact she never calls... actually she calls everyone BUT you",
+"This love is like free public WiFi—no security, weak connection, and everyone can access 💀",
+"She's posting thirst traps and you're posting 'good morning' texts to her unread messages",
+"Y'all have 0 chemistry but 100 unread arguments in WhatsApp",
+"This relationship is held together by duct tape, prayers, and her boredom",
+"Bro you're in her DMs but she's in HIS DMs... the math ain't mathing",
+"Y'all are just two people who hate being alone but hate each other more",
+"This match is giving 'situationship that expired during beta testing'",
+"She's got more chemistry with her hair stylist than with you",
+"Y'all celebrate the day you met like it's an achievement... it's not 💀",
+"Bro you're the 'for now' guy... the 'for never' guy actually",
+"This love is like street food—looks good, smells good, but you'll regret it at 3am",
+"She screenshots your texts and sends them to her bestie with 💀💀💀 and the bestie replies 'dump him'",
+"Y'all are just mutuals who occasionally touch each other",
+"Bro your love life is in the trenches... no wait the trenches are safer",
+"This relationship is a RED FLAG FACTORY and it's running 24/7 with overtime 🚩🚩🚩",
+"Y'all have more issues than a magazine subscription... and the magazine is Vogue (expensive issues)",
+"She's liking HIS posts while you're paying for her date nights 💀",
+"This match is giving 'my parents are still together for the taxes' energy",
+"Bro you're the backup plan... the plan C actually... plan Z maybe",
+"Y'all are mid... like room temperature water that's been sitting out for 3 days",
+"This relationship is giving 'minimum effort maximum delusion'",
+"Bro you're comfortable? Comfortable being disrespected maybe 😭",
+"Y'all stay together because breaking up requires a text and even that's too much work",
+"This love is like a default iPhone wallpaper—boring and everyone has it",
+"She tolerates you like she tolerates Monday mornings... with hate",
+"Y'all have the passion of a wet paper towel... make that a used wet paper towel",
+"Bro your relationship is in the friendzone and you PAID for the VIP ticket to get there",
+"This match is giving 'corporate team building where nobody talks' energy",
+"Y'all are just trauma dumping and calling it 'deep connection'",
+"She's your peace? Bro she's your PIECE of PROBLEMS with extra sides of drama",
+"This love is like a group project—you're doing all the work and she's taking credit",
+"Y'all are together but your minds are on Tinder swiping",
+"Bro you're not in love you're just used to her ignoring you",
+"This relationship is running on fumes, delusion, and her need for a wallet",
+"Y'all have the spark of a dying flashlight in a dark room... the flashlight is also underwater",
+"She's with you because her expectations were already on the floor. Congratulations on being the floor 🎉",
+"This match is giving 'we met on Snapchat and now we regret it' energy",
+"Y'all are just two people who don't know how to leave because rent is expensive alone",
+"Bro even your horoscope said 'good luck with that' and astrology is fake",
+"Y'all are cute... like baby's first relationship cute but the baby is crying",
+"Bro your love is like a 3-star Uber rating—not terrible, not great, just... there",
+"Y'all have potential... the potential to embarrass yourselves in public",
+"This match is like a candle in the wind... the wind is a hurricane",
+"She loves you... and she also loves her ex, her situationship, and that guy from work. Oop 💀",
+"Y'all are giving 'married for the kids' energy but there are no kids... just trauma",
+"Bro your love is like expired medicine—not helping anyone, just taking up space",
+"Y'all are cute but like... are you cute or is everyone just being nice?",
+"She'd pick her girls' night over you. And her girls' night alone. And her sleep. And her phone. And a random stranger.",
+"Bro you're the safe option... the option nobody chooses",
+"This love is like a backup career you never wanted—okay but depressing",
+"Y'all have good days... and 364 bad days",
+"This match is giving 'we post couple pics but don't talk for weeks' energy",
+"Bro your love life is a solid F-... and that's being generous",
+"She loves you but she loves attention more... and she's getting it from everyone but you",
+"Y'all are together but your phones are more interesting than each other",
+"This relationship is like a 2010 meme—trying too hard and nobody laughs anymore",
+"Bro you're the placeholder husband... the rehearsal... the practice run before her actual life starts",
+"Okay okay... y'all might actually make it... to next week... maybe",
+"Bro she's your ride or die... but she's also everyone else's ride",
+"This love is giving 'Netflix and chill but we don't even watch' energy",
+"Y'all are cute annoying... the annoying kind that makes everyone uncomfortable",
+"Bro you're in love... but she's in love with the idea of not being single",
+"This match is like a 1-star review—'would give zero if possible'",
+"Y'all are that couple that makes singles cringe... and couples cringe... and animals cringe",
+"She's your biggest fan... and your biggest opp... balance I guess ✨",
+"Bro this love is like a fake sneaker—looks real from far but up close it's embarrassing",
+"Y'all are giving 'engagement in 20 years' energy... if you both settle",
+"This relationship is like a bad playlist—all skips, no hits",
+"Bro she's wife material... for someone else... in another universe",
+"Y'all are goals... for people who have no goals 💀",
+"This love is like a restaurant with 1 star—cheap but you'll regret it",
+"Y'all are that couple that makes everyone believe in love... believe it's dead actually",
+"Bro you're doing well... at wasting time",
+"This match is giving 'meet the parents never' energy",
+"Y'all are solid... solidly messed up",
+"She's the one... the one you'll tell your future kids 'thank God I didn't marry her'",
+"Bro this love is like a 90s R&B song—dramatic and everyone's been through it",
+"Y'all are giving 'grandparents who divorced 30 years ago' energy 👴👵",
+"Bro she's THE ONE... to avoid at all costs",
+"This love is like a data plan with 0GB—nothing works",
+"Y'all are the blueprint... for disaster",
+"Bro this percentage is higher than your IQ... wait no it's not",
+"Y'all are THAT couple... that everyone avoids at parties",
+"This match is giving 'toxic but make it boring' energy",
+"She's your main character... in a horror movie",
+"Bro this love is certified... certified garbage",
+"Y'all are soulmates... in hell",
+"This relationship is like a viral tweet... that got ratioed",
+"Bro propose... propose to being single again",
+"Y'all are giving 'love story Netflix adaptation' but it got cancelled after season 1",
+"This match is rarer than a shiny Pokemon... because nobody wants this",
+"Bro you won... the award for worst relationship of the year 🏆"
+                // Add more lines here...
+            ],
+
+            // 10–19% → EMBARRASSING ATTEMPT
+            embarrassing: [
+                "Bro, this is embarrassing... for YOU 😂",
+                "Y'all are giving 'we met on a dare' energy",
+"Bro this love is like my credit score... in the gutter 📉",
+"Y'all are giving 'work friends who never hang out' energy",
+"She opens your texts but doesn't reply... for emotional damage",
+"This match is weaker than my gym commitment",
+"Y'all are just two people who share a Netflix password and nothing else",
+"Run before she makes you pay for her nails AND her therapy 🏃💨",
+"Her situationship is still on speed dial... and you're not even on her phone 💀",
+"This ain't love this is COPEium MAXIMUM",
+"Y'all belong in different time zones permanently",
+"Even your dog side-eyes you when she's around",
+"Bro you're the rebound... the rebound's rebound actually",
+"This relationship is giving 'barely surviving' and barely is generous",
+"Y'all argue about memes... and she's always wrong",
+"She's posting thirst traps and you're posting 'why me' on Reddit",
+"This percentage is lower than the chances of GTA 6 coming out",
+"Bro love didn't knock... it sent a text and left you on read",
+"Y'all are just coping together and calling it connection",
+"Even Siri said 'I don't have an answer for that'",
+"She's leaving you on delivered and posting on TikTok... you know why 💀",
+"This match is giving 'fine I guess' but even that's a stretch",
+"Bro you're the 'open when...' letter she never opens",
+"This love is like expired data plan—technically there but useless",
+"She's posting 'main character' energy and you're not even in the script",
+"Y'all have 0 chemistry but 100 excuses",
+"This relationship is held together by her boredom and your desperation",
+"Bro you're in her recently deleted... that's where you belong",
+"Y'all are just two people who don't want to be alone but also don't want each other",
+"This match is giving 'situationship that never loaded'",
+"She's got more chemistry with her female bestie and she's straight",
+"Y'all celebrate the first text like it's an achievement... it's embarrassing",
+"Bro you're the 'for now' guy... the 'for when I'm bored' guy",
+"This love is like cheap alcohol—burns going down and hurts in the morning",
+"She screenshots your cringe texts and puts them on her finsta",
+"Y'all are just acquaintances who sometimes make bad decisions",
+"Bro your love life is in the ICU... no wait, the morgue",
+"This relationship is a RED FLAG PARADE and everyone's invited 🚩🚩🚩",
+"Y'all have more issues than a therapist's notebook",
+"She's liking HIS posts while you're writing her poems 💀",
+"This match is giving 'my parents who sleep in different rooms' energy",
+"Bro you're the backup plan... the emergency brake that never gets used",
+"Y'all are mid... like cold McDonald's fries",
+"This relationship is giving 'negative effort positive cringe'",
+"Bro you're comfortable? Comfortable with being uncomfortable maybe",
+"Y'all stay together because breaking up would require a conversation",
+"This love is like a default ringtone—basic and annoying",
+"She tolerates you like she tolerates ads on YouTube",
+"Y'all have the passion of a decaf coffee",
+"Bro your relationship is in the friendzone and you paid for the DELUXE package",
+"This match is giving 'team building nobody wanted' energy",
+"Y'all are just trauma bonding and calling it 'growth'",
+"She's your peace? Bro she's your PIECE of WORK",
+"This love is like a group project—she's not doing anything and you're stressed",
+"Y'all are together but your minds are on dating apps",
+"Bro you're not in love you're just used to being ignored",
+"This relationship is running on prayers and her need for attention",
+"Y'all have the spark of a wet matchstick",
+"She's with you because her options ran out. You're the last option 🎉",
+"This match is giving 'we met on Tinder and should've unmatched' energy",
+"Y'all are just two people who don't know how to be alone",
+"Bro even your zodiac sign said 'this is not it'",
+"Y'all are cute... like a dumpster fire is cute from far away",
+"Bro your love is like a 2-star Uber rating—bad but not the worst",
+"Y'all have potential... to make each other miserable",
+"This match is like a candle in the wind... the wind is a fan... on high",
+"She loves you... like she loves her phone case... replaceable",
+"Y'all are giving 'married but sleeping back to back' energy",
+"Bro your love is like a crashed website—not loading",
+"Y'all are cute but like... are you cute or is everyone just blind?",
+"She'd pick her phone over you. And her charger. And her screen protector.",
+"Bro you're the safe option... the option that collects dust",
+"This love is like a backup plan you never wanted—exists but depressing",
+"Y'all have good days... and 363 bad days",
+"This match is giving 'we post each other but don't mean it' energy",
+"Bro your love life is a solid D-... and that's being polite",
+"She loves you but she loves her ex's memory more... and he's ugly",
+"Y'all are together but your thoughts are elsewhere... way elsewhere",
+"This relationship is like a 2015 meme—old and irrelevant",
+"Bro you're the placeholder boyfriend... the stand-in... the extra in her movie",
+"Okay okay... y'all might actually make it... through this conversation... maybe",
+"Bro she's your ride or die... but she's also everyone's passenger princess",
+"This love is giving 'Netflix and chill but we scroll separately' energy",
+"Y'all are cute annoying... the kind that makes people mute their stories",
+"Bro you're in love... but she's in love with the idea of having a boyfriend",
+"This match is like a 2-star review—'disappointed but not surprised'",
+"Y'all are that couple that makes people happy they're single",
+"She's your biggest fan... and your biggest headache... math checks out",
+"Bro this love is like a fake designer bag—embarrassing up close",
+"Y'all are giving 'engagement in 10 years' energy... if you both settle hard",
+"This relationship is like a mid playlist—some okay songs but mostly skips",
+"Bro she's wife material... for a different man... in a different life",
+"Y'all are goals... for people who gave up on life 💀",
+"This love is like a restaurant with 2 stars—you'll eat but you won't enjoy",
+"Y'all are that couple that makes everyone believe in love... believe it's dead actually",
+"Bro you're doing well... at being average",
+"This match is giving 'meet the friends never' energy",
+"Y'all are solid... solidly average",
+"She's the one... the one you'll forget in 5 years",
+"Bro this love is like a 2000s pop song—cheesy and outdated",
+"Y'all are giving 'grandparents who argue about everything' energy 👴👵",
+"Bro she's THE ONE... to teach you a lesson",
+"This love is like a data plan with 1GB—barely enough",
+"Y'all are the blueprint... for mediocrity",
+"Bro this percentage is higher than your confidence... wait no",
+"Y'all are THAT couple... that people talk about behind your backs",
+"This match is giving 'toxic but make it boring' energy but it's not even toxic, just boring",
+"She's your main character... in a B-movie",
+"Bro this love is certified... certified mid",
+"Y'all are soulmates... in a parallel universe where bad decisions are good",
+"This relationship is like a viral tweet... that nobody retweeted",
+"Bro propose... propose to working on yourself first",
+"Y'all are giving 'love story Netflix adaptation' but it's a documentary on bad choices",
+"This match is rarer than a shiny Pokemon... because nobody wants this disaster",
+"Bro you won... the participation trophy of love 🏆"
+                // Add more lines here...
+            ],
+
+            // 20–29% → SITUATIONSHIP STARTER PACK
+            situationship: [
+                "Y'all are just 'talking'... and that's the problem",
+                "Bro you're the backup plan. The emergency contact she never calls",
+"Bro this love is like my data balance after midnight... almost finished 💀",
+"Y'all are giving 'classmates who don't talk' energy",
+"She replies with 'lol' and 'haha' to everything... emotional damage max",
+"This match is weaker than my will to wake up early",
+"Y'all are just two people who share a mutual dislike for being single",
+"Run before she puts you in her 'close friends' story as a joke 🏃💨",
+"Her roster is full and you're on the waiting list 💀",
+"This ain't love this is DELUSION with extra steps",
+"Y'all belong on different planets... literally",
+"Even your bestie said 'bro what are you doing'",
+"Bro you're the 3am text... the 'I'm bored' option",
+"This relationship is giving 'barely breathing' energy",
+"Y'all argue about whose turn it is to text first",
+"She's posting 'healing era' posts and you're the reason",
+"This percentage is lower than the temperature in Antarctica",
+"Bro love didn't knock... it whispered and you misheard",
+"Y'all are just settling and calling it love",
+"Even Google Maps said 'I can't find this relationship'",
+"She's taking hours to reply but seconds to post on IG... you know why 💀",
+"This match is giving 'I'll take it' energy with zero enthusiasm",
+"Bro you're the 'last seen' but never replied to",
+"This love is like free trials—temporary and ends before you enjoy it",
+"She's posting 'boss energy' and you're not even in her payroll",
+"Y'all have 10% chemistry and 90% confusion",
+"This relationship is held together by her loneliness and your low standards",
+"Bro you're in her 'close friends' but not in her heart",
+"Y'all are just two people who matched on 3 apps and still don't talk",
+"This match is giving 'situationship that never started'",
+"She's got more chemistry with her barista than with you",
+"Y'all celebrate the first date like it's an achievement... it was 6 months ago",
+"Bro you're the 'for now' guy... the 'for when my ex doesn't reply' guy",
+"This love is like diet soda—trying to be sweet but failing",
+"She screenshots your texts and sends them to her group chat with 😬",
+"Y'all are just friends who sometimes cuddle and regret it",
+"Bro your love life is in the ER... no wait, flatlined",
+"This relationship is a RED FLAG EXHIBITION and you're the main exhibit 🚩🚩🚩",
+"Y'all have more issues than a tech startup",
+"She's liking HIS comments while you're liking her old photos 💀",
+"This match is giving 'my parents who are together for the kids' energy but no kids",
+"Bro you're the backup plan... the plan B that never gets chosen",
+"Y'all are mid... like day-old bread",
+"This relationship is giving 'minimum effort minimum results'",
+"Bro you're comfortable? Comfortable with being last priority maybe",
+"Y'all stay together because dating apps are exhausting",
+"This love is like a default notification sound—annoying",
+"She tolerates you like she tolerates her little cousin",
+"Y'all have the passion of a library",
+"Bro your relationship is in the friendzone and you paid for the subscription",
+"This match is giving 'office meeting that could've been email' energy",
+"Y'all are just trauma bonding and calling it 'intimacy'",
+"She's your peace? Bro she's your PIECE of DRAMA",
+"This love is like a group project—you're doing everything and she's doing nothing",
+"Y'all are together but your hearts are on Bumble",
+"Bro you're not in love you're just afraid of being alone",
+"This relationship is running on hope and her entertainment value",
+"Y'all have the spark of a broken lighter",
+"She's with you because the bar was on the floor. You're still under it 🎉",
+"This match is giving 'we met on Bumble and should've unmatch' energy",
+"Y'all are just two people who don't know what they want",
+"Bro even your therapist said 'this is above my pay grade'",
+"Y'all are cute... like a puppy that keeps peeing on the carpet",
+"Bro your love is like a 2.5-star Uber rating—barely acceptable",
+"Y'all have potential... to waste each other's time",
+"This match is like a candle in the wind... the wind is a tornado",
+"She loves you... like she loves her last slice of pizza... hesitantly",
+"Y'all are giving 'roommates with occasional benefits' energy",
+"Bro your love is like a buffering video—stuck at 99%",
+"Y'all are cute but like... are you cute or is everyone just being polite?",
+"She'd pick her cat over you. And her plant. And her pillow.",
+"Bro you're the safe option... the option that's always there but never chosen",
+"This love is like a backup plan you forgot about—exists but irrelevant",
+"Y'all have good days... and 362 confusing days",
+"This match is giving 'we post each other on our birthdays only' energy",
+"Bro your love life is a solid D... and that's being nice",
+"She loves you but she loves her freedom more... and her freedom includes everyone but you",
+"Y'all are together but your eyes are wandering... everywhere",
+"This relationship is like a 2018 meme—trying hard to stay relevant",
+"Bro you're the placeholder boyfriend... the audition... the pre-game before the real thing",
+"Okay okay... y'all might actually make it... to the end of the month... maybe",
+"Bro she's your ride or die... but she's also everyone's Uber ride",
+"This love is giving 'Netflix and chill but we watch different screens' energy",
+"Y'all are cute annoying... the kind that makes people block your stories",
+"Bro you're in love... but she's in love with the idea of options",
+"This match is like a 2-star review—'meh'",
+"Y'all are that couple that makes people grateful for being single",
+"She's your biggest fan... and your biggest stressor... balance?",
+"Bro this love is like a cheap copy—almost real but embarrassing",
+"Y'all are giving 'engagement in 5 years' energy... if nothing better comes along",
+"This relationship is like an average playlist—some bangers but mostly mid",
+"Bro she's wife material... for someone with lower standards... in a different economy",
+"Y'all are goals... for people who have given up on happiness 💀",
+"This love is like a restaurant with 2.5 stars—you'll go but you won't recommend",
+"Y'all are that couple that makes everyone believe in love... believe in settling actually",
+"Bro you're doing well... at being mediocre",
+"This match is giving 'meet the dog never' energy",
+"Y'all are solid... solidly confused",
+"She's the one... the one you'll tell stories about to your next therapist",
+"Bro this love is like a 2010 pop song—dated and cringe",
+"Y'all are giving 'grandparents who tolerate each other' energy 👴👵",
+"Bro she's THE ONE... to avoid in future relationships",
+"This love is like a data plan with 2GB—barely functional",
+"Y'all are the blueprint... for average relationships",
+"Bro this percentage is higher than your expectations... wait no",
+"Y'all are THAT couple... that people use as examples of what not to do",
+"This match is giving 'toxic but make it boring' energy but it's not toxic, just sad",
+"She's your main character... in a straight-to-DVD movie",
+"Bro this love is certified... certified average",
+"Y'all are soulmates... in a universe where everyone settles",
+"This relationship is like a viral tweet... that got 2 likes",
+"Bro propose... propose to being single and happy",
+"Y'all are giving 'love story Netflix adaptation' but it's a straight-to-streaming flop",
+"This match is rarer than a shiny Pokemon... because nobody wants this level of mid",
+"Bro you won... the bronze medal of love 🏆"
+                // Add more lines here...
+            ],
+
+            // 30–39% → TEMPORARY HAPPINESS
+            temporary: [
+                "This love is like a Snapchat story—disappears in 24 hours",
+                "Bro, you're happy... for now 💀",
+"Bro this love is like my phone battery at 30%... you know it's gonna die soon 💀",
+"Y'all are giving 'gym buddies who never hang out' energy",
+"She replies with emojis only... communication queen 👑",
+"This match is weaker than my excuses to skip the gym",
+"Y'all are just two people who share mutual loneliness",
+"Run before she makes you her personal ATM and therapist 🏃💨",
+"Her ex is still in her 'recent searches' 💀",
+"This ain't love this is COPE with benefits",
+"Y'all belong in different friend groups permanently",
+"Even your mom said 'she's nice but...' and the 'but' was loud",
+"Bro you're the placeholder... the 'until something better comes' guy",
+"This relationship is giving 'stable but boring' energy",
+"Y'all argue about who uses the last of the WiFi",
+"She's posting 'healing' posts and you're the wound",
+"This percentage is lower than my bank account after rent",
+"Bro love didn't knock... it sent a friend request and you accepted",
+"Y'all are just coexisting and calling it love",
+"Even Alexa said 'I don't understand this relationship'",
+"She's online but your texts are on read... classic 💀",
+"This match is giving 'it's okay I guess' with a shrug",
+"Bro you're the 'seen 1 hour ago' that never becomes 'online'",
+"This love is like a demo version—limited features, expires soon",
+"She's posting 'good vibes only' and you're not giving vibes",
+"Y'all have 30% chemistry and 70% convenience",
+"This relationship is held together by her need for attention and your need for touch",
+"Bro you're in her camera roll but not in her plans",
+"Y'all are just two people who are too lazy to break up",
+"This match is giving 'situationship with benefits' energy",
+"She's got more chemistry with her skincare routine",
+"Y'all celebrate the 3-month anniversary like it's a wedding",
+"Bro you're the 'for now' guy... the 'for when I'm bored and lonely' guy",
+"This love is like iced coffee in winter—still good but questionable",
+"She screenshots your arguments and sends them to her bestie with 💀",
+"Y'all are just friends who sometimes kiss and regret it",
+"Bro your love life is in the waiting room... waiting to die",
+"This relationship is a RED FLAG FESTIVAL and you're the main performer 🚩🚩🚩",
+"Y'all have more issues than a psychology textbook",
+"She's liking HIS gym pics while you're at the gym for her 💀",
+"This match is giving 'my parents who sleep in different rooms but say they're fine' energy",
+"Bro you're the backup plan... the plan you keep just in case",
+"Y'all are mid... like lukewarm coffee",
+"This relationship is giving 'minimum effort maximum tolerance'",
+"Bro you're comfortable? Comfortable with being average maybe",
+"Y'all stay together because breaking up is too much admin",
+"This love is like a default wallpaper—there but not appreciated",
+"She tolerates you like she tolerates Monday mornings... with a sigh",
+"Y'all have the passion of a beige wall",
+"Bro your relationship is in the friendzone and you bought the premium pass",
+"This match is giving 'work meeting that could've been a memo' energy",
+"Y'all are just trauma bonding and calling it 'healing together'",
+"She's your peace? Bro she's your PIECE of AVOIDANCE",
+"This love is like a group project—she's doing the minimum and you're doing damage control",
+"Y'all are together but your hearts are on pause",
+"Bro you're not in love you're just used to her presence",
+"This relationship is running on routine and her need for validation",
+"Y'all have the spark of a dying battery",
+"She's with you because the bar was low. You're the bar now 🎉",
+"This match is giving 'we met on Hinge and should've ended it' energy",
+"Y'all are just two people who are confused about feelings",
+"Bro even your horoscope said 'this is questionable'",
+"Y'all are cute... like a cat that scratches you",
+"Bro your love is like a 3-star Uber rating—average and forgettable",
+"Y'all have potential... to be average together",
+"This match is like a candle in the wind... the wind is a ceiling fan",
+"She loves you... like she loves her backup phone... only when the main one dies",
+"Y'all are giving 'dating but still on apps' energy",
+"Bro your love is like a slow website—testing your patience",
+"Y'all are cute but like... are you cute or is everyone just tired?",
+"She'd pick her friends over you. And her followers. And her plants.",
+"Bro you're the safe option... the option that's always open but never chosen",
+"This love is like a backup plan you keep forgetting—exists but meh",
+"Y'all have good days... and 361 average days",
+"This match is giving 'we post each other on birthdays only' energy but it's both birthdays",
+"Bro your love life is a solid C... average and unremarkable",
+"She loves you but she loves her peace more... and you're not peaceful",
+"Y'all are together but your thoughts are on vacation... without each other",
+"This relationship is like a 2019 meme—kinda funny but mostly forgettable",
+"Bro you're the placeholder boyfriend... the practice round... the tutorial before the real game",
+"Okay okay... y'all might actually make it... through this year... maybe",
+"Bro she's your ride or die... but she's also everyone's Lyft",
+"This love is giving 'Netflix and chill but we fall asleep' energy",
+"Y'all are cute annoying... the kind that makes people roll their eyes",
+"Bro you're in love... but she's in love with the idea of being loved",
+"This match is like a 3-star review—'it's okay'",
+"Y'all are that couple that makes people say 'they won't last'",
+"She's your biggest fan... and your biggest distraction",
+"Bro this love is like a budget version—functional but nothing special",
+"Y'all are giving 'engagement in 3 years' energy... if nobody better shows up",
+"This relationship is like an okay playlist—some good songs but mostly filler",
+"Bro she's wife material... for someone who wants average... in this economy",
+"Y'all are goals... for people with average expectations 💀",
+"This love is like a restaurant with 3 stars—you'll eat but you won't remember it",
+"Y'all are that couple that makes everyone believe in love... believe in 'it's fine' actually",
+"Bro you're doing well... at being okay",
+"This match is giving 'meet the friends eventually' energy",
+"Y'all are solid... solidly average",
+"She's the one... the one you'll tell your friends 'she was fine'",
+"Bro this love is like a 2015 pop song—forgettable",
+"Y'all are giving 'grandparents who watch TV separately' energy 👴👵",
+"Bro she's THE ONE... to teach you patience",
+"This love is like a data plan with 3GB—functional but limited",
+"Y'all are the blueprint... for mediocrity",
+"Bro this percentage is higher than your ambition... wait no",
+"Y'all are THAT couple... that people forget exists",
+"This match is giving 'mid but comfortable' energy",
+"She's your main character... in a TV show that got cancelled",
+"Bro this love is certified... certified okay",
+"Y'all are soulmates... in a universe where average is celebrated",
+"This relationship is like a viral tweet... that got 100 likes",
+"Bro propose... propose to being comfortable alone first",
+"Y'all are giving 'love story Netflix adaptation' but it's a B-movie",
+"This match is rarer than a shiny Pokemon... because who wants average?",
+"Bro you won... the participation trophy... again 🏆"
+                // Add more lines here...
+            ],
+
+            // 40–49% → MID BUT RISKY
+            midRisky: [
+                "Y'all are mid... like room temperature water",
+                "This relationship is giving 'minimum effort maximum cringe'",
+"Bro this love is like my phone at 40%... you're anxious but it might survive 💀",
+"Y'all are giving 'coworkers who occasionally drink together' energy",
+"She replies with voice notes but never texts... interesting choice",
+"This match is stronger than my diet but weaker than my excuses",
+"Y'all are just two people who settled together",
+"Run before she catches feelings for her 'best friend' 🏃💨",
+"Her DMs are dry but her heart is drier 💀",
+"This ain't love this is MID with benefits",
+"Y'all belong in different tax brackets",
+"Even your friends said 'she's aiight' and that hurt",
+"Bro you're the 'good enough' guy... the 'she'll do' option",
+"This relationship is giving 'stable but unexciting' energy",
+"Y'all argue about what to watch on Netflix... daily",
+"She's posting 'self love' posts and you're not included",
+"This percentage is like my grades in college—average but passing",
+"Bro love didn't knock... it sent a meme and you laughed",
+"Y'all are just existing together and calling it a relationship",
+"Even ChatGPT said 'this is complicated but okay'",
+"She's online but your messages are on delivered... suspicious 💀",
+"This match is giving 'it's alright' with a half smile",
+"Bro you're the 'typing...' that never becomes a message",
+"This love is like standard Netflix—good but everyone has it",
+"She's posting 'vibes' and you're giving average vibes",
+"Y'all have 45% chemistry and 55% convenience",
+"This relationship is held together by routine and fear of being alone",
+"Bro you're in her recent chats but not in her recent thoughts",
+"Y'all are just two people who are too comfortable to leave",
+"This match is giving 'situationship that became official but shouldn't have' energy",
+"She's got more chemistry with her morning coffee",
+"Y'all celebrate the 6-month anniversary like it's a milestone... it's not",
+"Bro you're the 'for now' guy... the 'until I figure out what I want' guy",
+"This love is like warm beer—acceptable but not great",
+"She screenshots your cute texts and sends them to her bestie with 🥹 (fake)",
+"Y'all are just friends who sometimes date and regret it",
+"Bro your love life is on life support... but stable",
+"This relationship is a RED FLAG SALE and you're buying everything 🚩🚩🚩",
+"Y'all have more issues than a family therapy session",
+"She's liking HIS old posts while you're posting her 💀",
+"This match is giving 'my parents who are together but unhappy' energy",
+"Bro you're the backup plan... the plan that's always there but never first",
+"Y'all are mid... like a sandwich from a gas station",
+"This relationship is giving 'medium effort medium results'",
+"Bro you're comfortable? Comfortable with being second choice maybe",
+"Y'all stay together because the memories are good but the present is meh",
+"This love is like a default ringtone—you'll keep it but you won't love it",
+"She tolerates you like she tolerates her job... for the benefits",
+"Y'all have the passion of a Monday morning",
+"Bro your relationship is in the friendzone but you get occasional VIP access",
+"This match is giving 'team building that was actually fun' energy but it's work",
+"Y'all are just trauma bonding and calling it 'growth together'",
+"She's your peace? Bro she's your PIECE of MEDIOCRITY",
+"This love is like a group project—you're both doing enough to pass but not excel",
+"Y'all are together but your hearts are on standby",
+"Bro you're not in love you're just used to the routine",
+"This relationship is running on history and her comfort zone",
+"Y'all have the spark of a phone at 5%—dim but there",
+"She's with you because the options were limited. You're the best of the worst 🎉",
+"This match is giving 'we met on Bumble and it's okay' energy",
+"Y'all are just two people who are okay with okay",
+"Bro even your zodiac sign said 'it could be worse'",
+"Y'all are cute... like a well-behaved child—nothing special",
+"Bro your love is like a 3.5-star Uber rating—above average but not great",
+"Y'all have potential... to be okay together",
+"This match is like a candle in the wind... the wind is mild",
+"She loves you... like she loves her job... for the stability",
+"Y'all are giving 'dating but still looking' energy",
+"Bro your love is like a website that loads slow but eventually works",
+"Y'all are cute but like... are you cute or is everyone just used to you?",
+"She'd pick her career over you. And her hobbies. And her sleep.",
+"Bro you're the safe option... the option that's good enough",
+"This love is like a backup plan you actually use—functional but not exciting",
+"Y'all have good days... and 350 average days",
+"This match is giving 'we post each other on special occasions' energy",
+"Bro your love life is a solid C+... above average average",
+"She loves you but she loves her independence more... and you're in the way sometimes",
+"Y'all are together but your thoughts are on weekend plans... without each other",
+"This relationship is like a 2020 meme—funny but we're tired of it",
+"Bro you're the placeholder boyfriend... the steady option... the reliable choice",
+"Okay okay... y'all might actually make it... to the future... maybe",
+"Bro she's your ride or die... but she's also everyone's designated driver",
+"This love is giving 'Netflix and chill but we actually talk' energy",
+"Y'all are cute annoying... the kind that makes people say 'goals' sarcastically",
+"Bro you're in love... but she's in love with stability... and you're stable",
+"This match is like a 3.5-star review—'good but not great'",
+"Y'all are that couple that makes people say 'they're okay I guess'",
+"She's your biggest fan... and your biggest reality check",
+"Bro this love is like an off-brand product—similar but not the same",
+"Y'all are giving 'engagement in 2 years' energy... if nothing changes",
+"This relationship is like a solid playlist—good songs but nothing amazing",
+"Bro she's wife material... for someone who wants stability... in this economy",
+"Y'all are goals... for people who want average 💀",
+"This love is like a restaurant with 3.5 stars—good but forgettable",
+"Y'all are that couple that makes everyone believe in love... believe in settling actually",
+"Bro you're doing well... at being consistent",
+"This match is giving 'meet the parents soon' energy",
+"Y'all are solid... solidly okay",
+"She's the one... the one you'll remember fondly but not passionately",
+"Bro this love is like a 2018 pop song—good but overplayed",
+"Y'all are giving 'grandparents who have separate hobbies' energy 👴👵",
+"Bro she's THE ONE... to keep you stable",
+"This love is like a data plan with 4GB—decent but limited",
+"Y'all are the blueprint... for average relationships",
+"Bro this percentage is higher than your motivation... wait no",
+"Y'all are THAT couple... that people don't really notice",
+"This match is giving 'solid but unspectacular' energy",
+"She's your main character... in a TV show that's renewed but nobody watches",
+"Bro this love is certified... certified okay",
+"Y'all are soulmates... in a universe where okay is enough",
+"This relationship is like a viral tweet... that got 500 likes",
+"Bro propose... propose to being happy with okay",
+"Y'all are giving 'love story Netflix adaptation' but it's a limited series",
+"This match is rarer than a shiny Pokemon... because finding someone okay is hard these days",
+"Bro you won... the silver medal of average love 🏆"
+                // Add more lines here...
+            ],
+
+            // 50–59% → MANAGEABLE CHAOS
+            manageableChaos: [
+                "Y'all are chaos together... but like, manageable chaos 😂",
+                "This love is like a group project—you're passing but barely",
+"Bro this love is like my phone at 50%... not great not terrible, just... there 💀",
+"Y'all are giving 'friends who accidentally dated' energy",
+"She replies with GIFs more than words... communication queen fr",
+"This match is stronger than my willpower but weaker than my anxiety",
+"Y'all are just two people who grew on each other like mold",
+"Run before she asks 'where is this going?' and you don't know 🏃💨",
+"Her heart is warm but her 'seen' zone is cold 💀",
+"This ain't love this is CHAOS with a bow on top",
+"Y'all belong in different astrological signs",
+"Even your ex said 'she seems nice' and that was suspicious",
+"Bro you're the 'I guess this works' guy... the practical choice",
+"This relationship is giving 'stable chaos' energy",
+"Y'all argue about food choices... passionately",
+"She's posting 'growth' posts and you're growing together or apart? who knows",
+"This percentage is like the weather—unpredictable",
+"Bro love didn't knock... it moved in without asking",
+"Y'all are just navigating chaos together and calling it love",
+"Even Google said 'did you mean: toxic but make it fun?'",
+"She's online and replying but the replies are dry... confusing 💀",
+"This match is giving 'it's complicated' but in a fun way",
+"Bro you're the 'online' that never initiates conversation",
+"This love is like premium Netflix—good but you're not sure if worth the price",
+"She's posting 'chaos' and you're the main character",
+"Y'all have 50% chemistry and 50% arguments",
+"This relationship is held together by inside jokes and good food",
+"Bro you're in her heart but her head is confused",
+"Y'all are just two people who make bad decisions together",
+"This match is giving 'situationship that turned relationship that might turn situationship again' energy",
+"She's got more chemistry with her takeout orders",
+"Y'all celebrate the first fight anniversary like it's cute... it's not",
+"Bro you're the 'for now' guy... the 'maybe forever' guy... the confusion is real",
+"This love is like a rollercoaster—fun but scary and makes you sick sometimes",
+"She screenshots your arguments and sends them to her bestie with 'help 💀'",
+"Y'all are just friends who fell into dating and don't know how to label it",
+"Bro your love life is a reality show—dramatic but entertaining",
+"This relationship is a RED FLAG MIXTAPE and you're both producing 🚩🚩🚩",
+"Y'all have more issues than a celebrity divorce",
+"She's liking HIS posts while you're laying next to her 💀",
+"This match is giving 'my parents who fight but stay together' energy",
+"Bro you're the main plan... but also the backup plan... it's confusing",
+"Y'all are mid... like pizza that's been sitting out—still good but questionable",
+"This relationship is giving 'medium effort maximum drama'",
+"Bro you're comfortable? Comfortable with the chaos maybe",
+"Y'all stay together because the good days are really good and the bad days are really bad",
+"This love is like your favorite song—you'll replay it even if it's sad",
+"She tolerates you like she tolerates her favorite problematic show",
+"Y'all have the passion of a reality TV show—fake but entertaining",
+"Bro your relationship is in the friendzone but you built a mansion there",
+"This match is giving 'team building that went too far' energy",
+"Y'all are just trauma bonding and calling it 'our story'",
+"She's your peace? Bro she's your PIECE of CHAOS and you love it",
+"This love is like a group project—you're both doing enough but it's messy",
+"Y'all are together but your hearts are in different time zones",
+"Bro you're not in love you're addicted to the drama",
+"This relationship is running on passion and poor decisions",
+"Y'all have the spark of a live wire—dangerous but exciting",
+"She's with you because you're fun. That's it. That's the reason 🎉",
+"This match is giving 'we met at a party and should've stayed there' energy",
+"Y'all are just two people who love hard and fight harder",
+"Bro even your horoscope said 'good luck with that one'",
+"Y'all are cute... like a storm is cute from far away",
+"Bro your love is like a 4-star Uber rating—good but had some bad trips",
+"Y'all have potential... to be great or to crash and burn",
+"This match is like a candle in the wind... the wind is your arguments",
+"She loves you... but she also loves the drama you bring",
+"Y'all are giving 'dating but fighting like exes' energy",
+"Bro your love is like a viral video—sometimes funny, sometimes cringe",
+"Y'all are cute but like... are you cute or is the chaos just entertaining?",
+"She'd pick the argument over you. And then you over the argument. It's complicated.",
+"Bro you're the safe option... but also the risky one... make it make sense",
+"This love is like a backup plan that became the main plan—unexpected but here we are",
+"Y'all have good days... and 200 chaotic days",
+"This match is giving 'we post each other when we're not fighting' energy",
+"Bro your love life is a solid B-... good but with issues",
+"She loves you but she loves the thrill more... and you're part of the thrill",
+"Y'all are together but your thoughts are on the last argument",
+"This relationship is like a 2021 meme—chaotic but we love it",
+"Bro you're the placeholder boyfriend... but you might be the real thing... we don't know yet",
+"Okay okay... y'all might actually make it... if you survive each other",
+"Bro she's your ride or die... but sometimes you want to push her out the car",
+"This love is giving 'Netflix and chill but we argue about what to watch' energy",
+"Y'all are cute annoying... the kind that makes people say 'they're gonna get married or kill each other'",
+"Bro you're in love... but you're also in arguments... balance?",
+"This match is like a 4-star review—'great but had some issues'",
+"Y'all are that couple that makes people say 'they're interesting'",
+"She's your biggest fan... and your biggest critic... keep you humble I guess",
+"Bro this love is like a designer replica—looks real but you know it's questionable",
+"Y'all are giving 'engagement in 1 year' energy... or breakup in 1 month... who knows",
+"This relationship is like a chaotic playlist—all over the place but somehow works",
+"Bro she's wife material... if you survive this phase",
+"Y'all are goals... for people who love drama 💀",
+"This love is like a restaurant with 4 stars—great but had one bad experience",
+"Y'all are that couple that makes everyone believe in love... believe in chaos love actually",
+"Bro you're doing well... at keeping it interesting",
+"This match is giving 'meet the parents next month' energy... or never",
+"Y'all are solid... solidly chaotic",
+"She's the one... the one you'll have stories about for years",
+"Bro this love is like a 2016 pop song—chaotic but iconic",
+"Y'all are giving 'grandparents who still argue' energy 👴👵",
+"Bro she's THE ONE... to keep life interesting",
+"This love is like a data plan with unlimited data—chaotic but unlimited",
+"Y'all are the blueprint... for chaotic love",
+"Bro this percentage is higher than your patience... sometimes",
+"Y'all are THAT couple... that people love to watch",
+"This match is giving 'messy but make it fun' energy",
+"She's your main character... in a drama series",
+"Bro this love is certified... certified chaotic",
+"Y'all are soulmates... in a chaotic universe",
+"This relationship is like a viral tweet... that got ratioed but in a fun way",
+"Bro propose... propose to the chaos",
+"Y'all are giving 'love story Netflix adaptation' but it's a drama",
+"This match is rarer than a shiny Pokemon... because finding someone who matches your chaos is hard",
+"Bro you won... the chaos award 🏆"
+                // Add more lines here...
+            ],
+
+            // 60–69% → DECENT BUT FRAGILE
+            decentFragile: [
+                "Y'all are cute... but like, baby's first relationship cute 👶",
+                "Bro, you're doing okay but don't get too comfortable 😬",
+"Bro this love is like my phone at 60%... decent charge but don't risk it 💀",
+"Y'all are giving 'friends who became lovers' energy (the good kind)",
+"She replies with paragraphs and then disappears for hours... the duality",
+"This match is stronger than my sleep schedule but weaker than my coffee addiction",
+"Y'all are just two people who actually like each other (rare)",
+"Run before... actually don't run, this one might be okay 🏃💨 (jk stay)",
+"Her heart is warm and her 'seen' zone is warm too... suspiciously good 💀",
+"This ain't love this is DECENT with potential",
+"Y'all belong in the same zodiac finally",
+"Even your mom said 'I like her' and mom's are always right",
+"Bro you're the 'actually good' guy... the keeper maybe",
+"This relationship is giving 'stable with occasional wobbles' energy",
+"Y'all argue about important stuff... like adults (weird)",
+"She's posting 'grateful' posts and you're in them (shocking)",
+"This percentage is like my savings—small but growing",
+"Bro love knocked and you actually opened the door",
+"Y'all are just vibing together and calling it love (the right way)",
+"Even Siri said 'this one looks promising'",
+"She's online and replying and engaged... what is this sorcery 💀",
+"This match is giving 'it's actually working' with a surprised face",
+"Bro you're the 'online' that actually starts conversations",
+"This love is like premium plus Netflix—actually worth it",
+"She's posting 'us' and it's not cringe (how?)",
+"Y'all have 65% chemistry and 35% growing pains",
+"This relationship is held together by respect and good communication (boring but effective)",
+"Bro you're in her heart and her head is finally on board",
+"Y'all are just two people who grew together (beautiful but rare)",
+"This match is giving 'situationship that actually became something' energy",
+"She's got chemistry with you and only you (revolutionary)",
+"Y'all celebrate milestones without posting everything (maturity??)",
+"Bro you're the 'for now' guy that might become 'forever' guy",
+"This love is like a nice wine—gets better with time",
+"She screenshots your cute texts and sends them to her bestie with 🥹 (real)",
+"Y'all are just friends who became lovers and it actually worked",
+"Bro your love life is a rom-com—cute but sometimes predictable",
+"This relationship is a GREEN FLAG FACTORY and it's running smoothly 🟢🟢🟢",
+"Y'all have normal issues like adults (boring but healthy)",
+"She's liking YOUR posts and only yours (exclusive queen)",
+"This match is giving 'my parents who are actually happy' energy",
+"Bro you're the main plan and the only plan",
+"Y'all are good... like home-cooked meal good",
+"This relationship is giving 'good effort good results'",
+"Bro you're comfortable? Comfortable AND happy? Impossible",
+"Y'all stay together because you actually like each other (wild concept)",
+"This love is like your favorite hoodie—comfortable and reliable",
+"She tolerates you like she tolerates her own flaws—with patience",
+"Y'all have the passion of a slow burn—building over time",
+"Bro your relationship left the friendzone and built a home there",
+"This match is giving 'team building that actually worked' energy",
+"Y'all are just growing together and calling it 'our journey' (cringe but true)",
+"She's your peace? Bro she's your PEACE (finally)",
+"This love is like a group project—you're both doing your part and it's working",
+"Y'all are together and your hearts are in sync",
+"Bro you're in love AND you like each other (the ultimate combo)",
+"This relationship is running on mutual respect and good vibes",
+"Y'all have the spark of a steady flame—consistent and warm",
+"She's with you because she chooses you. Every day. (that's deep bro) 🎉",
+"This match is giving 'we met the right way' energy",
+"Y'all are just two people who figured it out",
+"Bro even your horoscope said 'this might be the one'",
+"Y'all are cute... like genuinely cute, not annoying cute",
+"Bro your love is like a 4.5-star Uber rating—consistently good",
+"Y'all have potential... to be great together",
+"This match is like a candle in a room—steady light",
+"She loves you AND she likes you (difference is real)",
+"Y'all are giving 'dating with intention' energy",
+"Bro your love is like a reliable website—always loads, never crashes",
+"Y'all are cute and everyone actually agrees",
+"She'd pick you over her phone sometimes. That's real love.",
+"Bro you're the safe option AND the exciting one (you unlocked achievement)",
+"This love is like a plan that actually worked out",
+"Y'all have good days... and 300 good days",
+"This match is giving 'we post each other genuinely' energy",
+"Bro your love life is a solid B+... above average and improving",
+"She loves you AND she respects you (revolutionary concept)",
+"Y'all are together and your thoughts are on future together",
+"This relationship is like a 2022 meme—actually good",
+"Bro you're the boyfriend... not placeholder, not rehearsal, THE boyfriend",
+"Okay okay... y'all might actually make it... to forever maybe",
+"Bro she's your ride or die AND your peaceful drive",
+"This love is giving 'Netflix and chill but we actually connect' energy",
+"Y'all are cute and the good kind of annoying (just a little)",
+"Bro you're in love AND she's in love (both on same page?? witchcraft)",
+"This match is like a 4.5-star review—'highly recommend'",
+"Y'all are that couple that makes people say 'goals' genuinely",
+"She's your biggest fan AND your best friend",
+"Bro this love is like the real thing—authentic and valuable",
+"Y'all are giving 'engagement soon' energy... maybe... don't rush it",
+"This relationship is like a great playlist—all hits, no skips",
+"Bro she's wife material AND you're husband material (power couple)",
+"Y'all are goals... for real this time 💀",
+"This love is like a restaurant with 4.5 stars—actually worth the hype",
+"Y'all are that couple that makes everyone believe in love (the real kind)",
+"Bro you're doing well... at life actually",
+"This match is giving 'meet the parents went well' energy",
+"Y'all are solid... solidly good",
+"She's the one... the one you tell your grandkids about",
+"Bro this love is like a 2023 hit song—currently loving it",
+"Y'all are giving 'grandparents who still hold hands' energy 👴👵",
+"Bro she's THE ONE... actually this time",
+"This love is like unlimited data—freedom and connection",
+"Y'all are the blueprint... for healthy love",
+"Bro this percentage is higher than your doubts",
+"Y'all are THAT couple... that people admire",
+"This match is giving 'green flags only' energy",
+"She's your main character... in a feel-good movie",
+"Bro this love is certified... certified good",
+"Y'all are soulmates... in this universe",
+"This relationship is like a viral tweet... that everyone loved",
+"Bro propose... when you're ready (no pressure)",
+"Y'all are giving 'love story Netflix adaptation' and it's a hit",
+"This match is rarer than a shiny Pokemon... because real love is rare",
+"Bro you won... at love (for now, don't mess it up) 🏆"
+                // Add more lines here...
+            ],
+
+            // 70–79% → STRONG BUT DANGEROUS
+            strongDangerous: [
+                "Okay okay... y'all might actually make it... or not 💀",
+                "Bro, she's your ride or die... but is she your RIDE or just the UBER?",
+"Bro this love is like my phone at 70%... comfortable but don't get too confident 💀",
+"Y'all are giving 'best friends who fell in love' energy (the dream)",
+"She replies with everything and actually cares about your day (keeper)",
+"This match is stronger than my coffee addiction",
+"Y'all are just two people who found their person (lucky)",
+"Run before... actually hold on tight, this one's a ride 🏃💨 (stay)",
+"Her heart is warm and her 'seen' zone is warm AND she replies (legendary) 💀",
+"This ain't love this is STRONG with a side of 'don't mess it up'",
+"Y'all belong together (finally someone said it)",
+"Even your haters said 'they're actually good together'",
+"Bro you're the 'main character' in her story (finally)",
+"This relationship is giving 'power couple' energy",
+"Y'all argue but resolve it like adults (rare footage)",
+"She's posting 'my person' and it's you (brag)",
+"This percentage is like your potential—high but needs nurturing",
+"Bro love moved in and brought furniture",
+"Y'all are just thriving together and calling it life",
+"Even Google said 'relationship goals'",
+"She's online and she texts you first (unicorn behavior) 💀",
+"This match is giving 'we made it' with tears of joy",
+"Bro you're the 'good morning' and 'good night' texts (consistent king)",
+"This love is like the full Netflix package—worth every penny",
+"She's posting 'us' and it's actually cute (talent)",
+"Y'all have 75% chemistry and 25% 'we're still learning'",
+"This relationship is held together by love AND effort (revolutionary)",
+"Bro you're in her heart, her head, and her future plans",
+"Y'all are just two people who built something real",
+"This match is giving 'situationship who? I don't know her' energy",
+"She's got chemistry with you and your future together",
+"Y'all celebrate anniversaries like the first date—still exciting",
+"Bro you're the 'forever' guy (we knew it)",
+"This love is like a fine dining experience—quality time",
+"She screenshots your love notes and saves them in a folder (melt)",
+"Y'all are lovers AND best friends (the ultimate combo)",
+"Bro your love life is a fairytale—with some real talk",
+"This relationship is a GREEN FLAG PARADE and everyone's invited 🟢🟢🟢",
+"Y'all have issues but you handle them (adulting)",
+"She's liking YOUR posts and commenting cute things (relationship goals)",
+"This match is giving 'my parents who are relationship goals' energy",
+"Bro you're the main plan and the future plan",
+"Y'all are good... like five-star restaurant good",
+"This relationship is giving 'consistent effort consistent results'",
+"Bro you're comfortable AND excited? Pick a lane",
+"Y'all stay together because you choose each other daily",
+"This love is like your favorite playlist—always hits right",
+"She tolerates you AND celebrates you (difference)",
+"Y'all have the passion of a fire that's been tended",
+"Bro your relationship left the friendzone and built a mansion",
+"This match is giving 'team building that created champions' energy",
+"Y'all are just growing together and documenting it (tiktok couple loading)",
+"She's your peace AND your excitement (balanced king)",
+"This love is like a group project—you're both A students",
+"Y'all are together and your hearts are building a future",
+"Bro you're in love AND in sync (powerful combo)",
+"This relationship is running on trust and good communication (boring but beautiful)",
+"Y'all have the spark of a well-maintained fire—warm and lasting",
+"She's with you because she sees forever. That's real. 🎉",
+"This match is giving 'we met when we were ready' energy",
+"Y'all are just two people who did the work and got the reward",
+"Bro even your horoscope said 'this is written in the stars'",
+"Y'all are cute... like movie cute, not Instagram fake cute",
+"Bro your love is like a 5-star Uber rating—consistently excellent",
+"Y'all have potential... to be legendary",
+"This match is like a candle in a safe home—steady and warm",
+"She loves you AND she's in love with you (yes, difference)",
+"Y'all are giving 'engaged energy' without the ring (yet)",
+"Bro your love is like a premium website—fast, reliable, secure",
+"Y'all are cute and everyone is jealous (respectfully)",
+"She'd pick you over plans with friends sometimes (that's love)",
+"Bro you're the safe option AND the dream option (you won)",
+"This love is like a plan that exceeded expectations",
+"Y'all have good days... and 365 good days",
+"This match is giving 'we post each other and mean it' energy",
+"Bro your love life is a solid A-... almost perfect",
+"She loves you AND she shows it (what a concept)",
+"Y'all are together and your thoughts are on growing old together",
+"This relationship is like a 2023 meme—actually wholesome",
+"Bro you're the boyfriend AND the best friend (title unlocked)",
+"Okay okay... y'all might actually make it... to forever (for real)",
+"Bro she's your ride or die AND your peaceful forever",
+"This love is giving 'Netflix and chill but we plan our future' energy",
+"Y'all are cute and the good kind of couple goals",
+"Bro you're in love AND she's in love AND it's mutual (shocking)",
+"This match is like a 5-star review—'perfect experience'",
+"Y'all are that couple that makes people say 'relationship goals' unironically",
+"She's your biggest fan AND your partner in crime",
+"Bro this love is like the real deal—authentic and priceless",
+"Y'all are giving 'engagement soon' energy... like actually soon",
+"This relationship is like a legendary playlist—timeless hits",
+"Bro she's wife material AND you're husband material AND you know it",
+"Y'all are goals... the kind people aspire to 💀",
+"This love is like a restaurant with 5 stars—worth the hype",
+"Y'all are that couple that makes everyone believe in love (the real kind)",
+"Bro you're doing well... at building a future",
+"This match is giving 'met the parents and they loved me' energy",
+"Y'all are solid... solidly unbreakable",
+"She's the one... the one you thank the universe for",
+"Bro this love is like a classic song—never gets old",
+"Y'all are giving 'grandparents who are still in love' energy 👴👵",
+"Bro she's THE ONE... for real this time (no cap)",
+"This love is like unlimited premium data—unlimited love",
+"Y'all are the blueprint... for relationship goals",
+"Bro this percentage is higher than your ego (finally)",
+"Y'all are THAT couple... that sets the standard",
+"This match is giving 'green flags waving' energy",
+"She's your main character... in a bestseller novel",
+"Bro this love is certified... certified legendary",
+"Y'all are soulmates... in every universe",
+"This relationship is like a viral tweet... that broke the internet",
+"Bro propose... when it feels right (it will)",
+"Y'all are giving 'love story Netflix adaptation' and it's winning awards",
+"This match is rarer than a shiny Pokemon... because real love is legendary",
+"Bro you won... at life actually 🏆"
+                // Add more lines here...
+            ],
+
+            // 80–89% → ELITE BUT EGO RISING
+            eliteEgo: [
+                "Y'all are giving 'grandparents who been together 50 years' energy 👴👵",
+                "Bro, she's THE ONE. Lock it down before someone else does 🔒",
+"Bro this love is like my phone at 80%... confident but don't get cocky 💀",
+"Y'all are giving 'power couple who knows it' energy",
+"She replies with everything and sends good morning texts first (brag)",
+"This match is stronger than my excuses and my confidence combined",
+"Y'all are just two people who are winning at love",
+"Run before... nah you're good, just don't let the ego ruin it 🏃💨",
+"Her heart is gold and her replies are fast (rare specimen) 💀",
+"This ain't love this is ELITE with a warning label",
+"Y'all belong on couple goals posts",
+"Even strangers said 'y'all are goals'",
+"Bro you're the 'end game' (we been knew)",
+"This relationship is giving 'power couple that runs the world' energy",
+"Y'all argue but it's cute and you makeup even cuter",
+"She's posting 'him' and everyone is jealous",
+"This percentage is like your relationship—high but needs maintenance",
+"Bro love arrived in a limo",
+"Y'all are just thriving and everyone is watching",
+"Even TikTok said 'couple goals'",
+"She's online and she's thinking about you (psychic) 💀",
+"This match is giving 'we made it and we know it' with confidence",
+"Bro you're the 'good morning beautiful' and she's the 'good morning handsome' (iconic)",
+"This love is like the VIP experience—premium everything",
+"She's posting 'us' and it's breaking the internet",
+"Y'all have 85% chemistry and 15% 'we're still humans'",
+"This relationship is held together by love, respect, AND effort (trifecta)",
+"Bro you're in her heart, her head, her future, and her dreams",
+"Y'all are just two people who are proving love exists",
+"This match is giving 'situationship could never' energy",
+"She's got chemistry with you and your potential",
+"Y'all celebrate anniversaries like the first date—still magical",
+"Bro you're the 'forever' guy and you know it",
+"This love is like a luxury vacation—worth every moment",
+"She screenshots your love notes and prints them (extra)",
+"Y'all are lovers, best friends, AND partners in crime",
+"Bro your love life is a movie—with a sequel coming",
+"This relationship is a GREEN FLAG EMPIRE and you're the rulers 🟢🟢🟢",
+"Y'all have issues but they're small and you laugh about them later",
+"She's liking YOUR posts and reposting your stuff (supportive queen)",
+"This match is giving 'my parents who are still #couplegoals' energy",
+"Bro you're the main plan, the backup plan, and the future plan",
+"Y'all are good... like award-winning good",
+"This relationship is giving 'elite effort elite results'",
+"Bro you're comfortable, excited, AND proud? Too much",
+"Y'all stay together because you're better together (facts)",
+"This love is like your favorite luxury brand—quality always",
+"She tolerates you, celebrates you, AND elevates you (trifecta)",
+"Y'all have the passion of a fire that never dies",
+"Bro your relationship left the friendzone and bought the neighborhood",
+"This match is giving 'team building that created legends' energy",
+"Y'all are just growing together and inspiring others",
+"She's your peace, your excitement, AND your motivation",
+"This love is like a group project—you're both valedictorians",
+"Y'all are together and your hearts are writing history",
+"Bro you're in love AND in sync AND in power",
+"This relationship is running on trust, respect, and good vibes only",
+"Y'all have the spark of a forever flame—eternal and warm",
+"She's with you because you're her person. Period. 🎉",
+"This match is giving 'we met when we were ready and became legends' energy",
+"Y'all are just two people who did the work and became goals",
+"Bro even your horoscope said 'this is legendary'",
+"Y'all are cute... like iconically cute",
+"Bro your love is like a 5-star Uber rating with comments—'best ride ever'",
+"Y'all have potential... to be immortalized",
+"This match is like a candle in a palace—royal and steady",
+"She loves you AND she's obsessed with you (healthy obsession)",
+"Y'all are giving 'engaged energy' with a ring coming soon",
+"Bro your love is like a premium app—worth the subscription",
+"Y'all are cute and everyone wants what you have",
+"She'd pick you over everything (and that's real)",
+"Bro you're the safe option, the dream option, AND the only option",
+"This love is like a plan that became a legacy",
+"Y'all have good days... and 400 good days",
+"This match is giving 'we post each other and break the internet' energy",
+"Bro your love life is a solid A... excellent with room for perfection",
+"She loves you AND she worships you (respectfully)",
+"Y'all are together and your thoughts are on legacy building",
+"This relationship is like a 2024 hit—currently charting",
+"Bro you're the boyfriend, the best friend, AND the future husband",
+"Okay okay... y'all might actually make it... to legendary status",
+"Bro she's your ride or die AND your ride to success",
+"This love is giving 'Netflix and chill but we plan our legacy' energy",
+"Y'all are cute and the kind of couple that gets interviewed",
+"Bro you're in love AND she's in love AND it's powerful",
+"This match is like a 5-star review with comments—'changed my life'",
+"Y'all are that couple that makes people say 'relationship goals' and mean it",
+"She's your biggest fan AND your partner in legacy",
+"Bro this love is like the real deal—priceless and rare",
+"Y'all are giving 'engagement soon' energy... like this year soon",
+"This relationship is like a legendary album—every song is a hit",
+"Bro she's wife material AND you're husband material AND everyone knows it",
+"Y'all are goals... the kind that set trends 💀",
+"This love is like a restaurant with 5 stars AND a Michelin rating",
+"Y'all are that couple that makes everyone believe in fairytales",
+"Bro you're doing well... at creating a legacy",
+"This match is giving 'met the parents and they adopted me' energy",
+"Y'all are solid... solidly legendary",
+"She's the one... the one you write books about",
+"Bro this love is like a timeless classic—never goes out of style",
+"Y'all are giving 'grandparents who are still iconic' energy 👴👵",
+"Bro she's THE ONE... the legend herself",
+"This love is like unlimited premium plus data—unlimited everything",
+"Y'all are the blueprint... for legendary love",
+"Bro this percentage is higher than your expectations",
+"Y'all are THAT couple... that defines love",
+"This match is giving 'green flags forever' energy",
+"She's your main character... in an epic saga",
+"Bro this love is certified... certified iconic",
+"Y'all are soulmates... in every timeline",
+"This relationship is like a viral tweet... that became history",
+"Bro propose... when the moment is right (it will be epic)",
+"Y'all are giving 'love story Netflix adaptation' and it's a phenomenon",
+"This match is rarer than a shiny Pokemon... because legendary love is once in a lifetime",
+"Bro you won... at love and life 🏆"
+                // Add more lines here...
+            ],
+
+            // 90–100% → LEGENDARY BUT STILL MORTAL
+            legendary: [
+                "Y'all are the blueprint. The template. The GOALS. 🏆",
+                "This match is 100% certified GEN Z LOVE. No cap. All facts. 🫶🔥",
+"Bro this love is like my phone at 100%... perfect but don't take it for granted 💀",
+"Y'all are giving 'soulmates who found each other' energy (the rarest)",
+"She replies with everything and anticipates your needs (witchcraft)",
+"This match is stronger than anything I've ever seen",
+"Y'all are just two people who are proof that love exists",
+"Run before... never run, hold on tight and never let go 🏃💨 (stay forever)",
+"Her heart is platinum and her replies are instant (mythical creature) 💀",
+"This ain't love this is LEGENDARY with a reminder to stay humble",
+"Y'all belong in love story books",
+"Even the haters said 'okay they won'",
+"Bro you're the 'happily ever after' (finally)",
+"This relationship is giving 'legendary couple that changes the world' energy",
+"Y'all argue but it's rare and you resolve it with love",
+"She's posting 'forever' and it's you (brag of the century)",
+"This percentage is like your love—perfect but needs nurturing",
+"Bro love built a castle and you're both living in it",
+"Y'all are just thriving and making everyone believe",
+"Even the universe said 'finally, a real one'",
+"She's online and she's planning your future together (goals) 💀",
+"This match is giving 'we made it and we'll keep making it' with humility",
+"Bro you're the 'good morning my love' and she's the 'good morning forever' (iconic)",
+"This love is like the unlimited everything plan—no limits",
+"She's posting 'us' and it's making history",
+"Y'all have 95% chemistry and 5% 'we're still growing' (healthy)",
+"This relationship is held together by love, respect, effort, AND destiny",
+"Bro you're in her heart, her head, her future, her dreams, and her soul",
+"Y'all are just two people who are rewriting love stories",
+"This match is giving 'every other relationship could never' energy",
+"She's got chemistry with you and your soul",
+"Y'all celebrate anniversaries like the first date—still magical after years",
+"Bro you're the 'forever' guy and everyone knows it",
+"This love is like a spiritual experience—beyond words",
+"She screenshots your love notes and keeps them in her heart",
+"Y'all are lovers, best friends, partners in crime, AND soulmates",
+"Bro your love life is a masterpiece—with no flaws",
+"This relationship is a GREEN FLAG KINGDOM and you're the royalty 🟢🟢🟢",
+"Y'all have issues but they're microscopic and you grow from them",
+"She's liking YOUR posts and hyping you up always (queen behavior)",
+"This match is giving 'my parents who are still deeply in love after 50 years' energy",
+"Bro you're the main plan, the only plan, and the forever plan",
+"Y'all are good... like divinely good",
+"This relationship is giving 'legendary effort legendary results'",
+"Bro you're comfortable, excited, proud, AND grateful? That's rare",
+"Y'all stay together because you're meant to be (destiny)",
+"This love is like your favorite soul food—nourishing always",
+"She tolerates you, celebrates you, elevates you, AND completes you",
+"Y'all have the passion of a fire that burns eternally",
+"Bro your relationship left the friendzone and became the universe",
+"This match is giving 'team building that created miracles' energy",
+"Y'all are just growing together and becoming legends",
+"She's your peace, your excitement, your motivation, AND your home",
+"This love is like a group project—you're both professors",
+"Y'all are together and your hearts are one",
+"Bro you're in love AND in sync AND in power AND in peace",
+"This relationship is running on trust, respect, good vibes, AND destiny",
+"Y'all have the spark of a eternal flame—infinite and warm",
+"She's with you because you're her soulmate. Period. End of story. 🎉",
+"This match is giving 'we met when the universe aligned' energy",
+"Y'all are just two people who did the work and became immortal",
+"Bro even your horoscope said 'this is written in the stars... literally'",
+"Y'all are cute... like divinely cute",
+"Bro your love is like a 5-star Uber rating with superhost status",
+"Y'all have potential... to be infinite",
+"This match is like a candle in a temple—sacred and eternal",
+"She loves you AND she's in love with you AND she's obsessed with you (happily)",
+"Y'all are giving 'engaged energy' with a ring that's coming soon",
+"Bro your love is like a premium lifetime subscription—worth forever",
+"Y'all are cute and everyone is in awe",
+"She'd pick you over anything and everything (and that's real love)",
+"Bro you're the safe option, the dream option, the only option, AND the forever option",
+"This love is like a plan that became destiny",
+"Y'all have good days... and 1000 good days",
+"This match is giving 'we post each other and inspire generations' energy",
+"Bro your love life is an A+... perfection with growth",
+"She loves you AND she worships you AND she's grateful for you",
+"Y'all are together and your thoughts are on eternity",
+"This relationship is like a timeless classic—never ages",
+"Bro you're the boyfriend, the best friend, the future husband, AND the soulmate",
+"Okay okay... y'all might actually make it... to eternity (for real)",
+"Bro she's your ride or die AND your soul's home",
+"This love is giving 'Netflix and chill but we plan our eternity' energy",
+"Y'all are cute and the kind of couple that gets studied",
+"Bro you're in love AND she's in love AND it's cosmic",
+"This match is like a 5-star review with comments—'changed my life forever'",
+"Y'all are that couple that makes people say 'relationship goals' and write books about it",
+"She's your biggest fan AND your partner in forever",
+"Bro this love is like the real deal—priceless, rare, and eternal",
+"Y'all are giving 'engagement soon' energy... like next month soon",
+"This relationship is like a legendary album that's also a movie that's also a book",
+"Bro she's wife material AND you're husband material AND the universe approves",
+"Y'all are goals... the kind that become legends 💀",
+"This love is like a restaurant with 5 stars AND a Michelin rating AND a waiting list",
+"Y'all are that couple that makes everyone believe in miracles",
+"Bro you're doing well... at creating eternity",
+"This match is giving 'met the parents and they cried with joy' energy",
+"Y'all are solid... solidly eternal",
+"She's the one... the one the universe made for you",
+"Bro this love is like a timeless classic—forever relevant",
+"Y'all are giving 'grandparents who are still goals after 70 years' energy 👴👵",
+"Bro she's THE ONE... the one the universe designed",
+"This love is like unlimited cosmic data—infinite love",
+"Y'all are the blueprint... for eternal love",
+"Bro this percentage is higher than the sky",
+"Y'all are THAT couple... that defines forever",
+"This match is giving 'green flags across all dimensions' energy",
+"She's your main character... in an infinite story",
+"Bro this love is certified... certified eternal",
+"Y'all are soulmates... in every dimension",
+"This relationship is like a viral tweet... that became immortal",
+"Bro propose... when your souls align (they already have)",
+"Y'all are giving 'love story Netflix adaptation' and it's the top of all time",
+"This match is rarer than a shiny Pokemon... because soulmates are once in a lifetime",
+"Bro you won... at existence 🏆"
+                // Add more lines here...
+            ]
+        };
+
+        // -------------------------------------
+        // CORE LOGIC (NO NEED TO TOUCH BELOW)
+        // -------------------------------------
+
+        function getZodiacSign(day, month) {
+            if (!day || !month) return null;
+            if ((month == 1 && day >= 20) || (month == 2 && day <= 18)) return "Aquarius";
+            if ((month == 2 && day >= 19) || (month == 3 && day <= 20)) return "Pisces";
+            if ((month == 3 && day >= 21) || (month == 4 && day <= 19)) return "Aries";
+            if ((month == 4 && day >= 20) || (month == 5 && day <= 20)) return "Taurus";
+            if ((month == 5 && day >= 21) || (month == 6 && day <= 20)) return "Gemini";
+            if ((month == 6 && day >= 21) || (month == 7 && day <= 22)) return "Cancer";
+            if ((month == 7 && day >= 23) || (month == 8 && day <= 22)) return "Leo";
+            if ((month == 8 && day >= 23) || (month == 9 && day <= 22)) return "Virgo";
+            if ((month == 9 && day >= 23) || (month == 10 && day <= 22)) return "Libra";
+            if ((month == 10 && day >= 23) || (month == 11 && day <= 21)) return "Scorpio";
+            if ((month == 11 && day >= 22) || (month == 12 && day <= 21)) return "Sagittarius";
+            if ((month == 12 && day >= 22) || (month == 1 && day <= 19)) return "Capricorn";
+            return null;
+        }
+
+        function triggerCalculation() {
+            let name1 = document.getElementById('name1').value.trim().toLowerCase();
+            let name2 = document.getElementById('name2').value.trim().toLowerCase();
+
+            if (!name1 || !name2) {
+                alert("Yo, enter the names! Don't be shy 🫢😂");
+                return;
+            }
+
+            document.getElementById('resultArea').classList.remove('show');
+            document.getElementById('loader').style.display = 'block';
+            
+            setTimeout(() => {
+                performCalculation();
+            }, 1500);
+        }
+
+        function performCalculation() {
+            let name1 = document.getElementById('name1').value.trim().toLowerCase();
+            let name2 = document.getElementById('name2').value.trim().toLowerCase();
+            let date1 = document.getElementById('date1').value;
+            let date2 = document.getElementById('date2').value;
+
+            let namesArray = [name1, name2];
+            namesArray.sort();
+            let combinedNames = namesArray[0] + namesArray[1];
+
+            let hash = 0;
+            for (let i = 0; i < combinedNames.length; i++) {
+                hash += combinedNames.charCodeAt(i);
+            }
+
+            let score = hash % 101;
+
+            if (date1 && date2) {
+                let d1 = new Date(date1).getDate();
+                let d2 = new Date(date2).getDate();
+                let modifier = (d1 + d2) % 10;
+                score = (score + modifier) % 101;
+            }
+
+            if (score > 100) score = 100;
+            if (score < 0) score = 0;
+
+            updateUI(score);
+        }
+
+        function updateUI(score) {
+            let title = "";
+            let category = "";
+
+            // CLASSIFYING SCORE
+            if (score <= 9) { category = "disaster"; title = "ABSOLUTE DISASTER 💀"; }
+            else if (score <= 19) { category = "embarrassing"; title = "EMBARRASSING ATTEMPT 😬"; }
+            else if (score <= 29) { category = "situationship"; title = "SITUATIONSHIP STARTER PACK 🚩"; }
+            else if (score <= 39) { category = "temporary"; title = "TEMPORARY HAPPINESS ⏳"; }
+            else if (score <= 49) { category = "midRisky"; title = "MID BUT RISKY ⚠️"; }
+            else if (score <= 59) { category = "manageableChaos"; title = "MANAGEABLE CHAOS 🌪️"; }
+            else if (score <= 69) { category = "decentFragile"; title = "DECENT BUT FRAGILE 🧊"; }
+            else if (score <= 79) { category = "strongDangerous"; title = "STRONG BUT DANGEROUS 🔥"; }
+            else if (score <= 89) { category = "eliteEgo"; title = "ELITE BUT EGO RISING 🏆"; }
+            else { category = "legendary"; title = "LEGENDARY BUT STILL MORTAL 👑"; }
+
+            // PICK RANDOM LINE
+            let lines = linesData[category];
+            let text = lines[Math.floor(Math.random() * lines.length)];
+
+            document.getElementById('scoreDisplay').innerText = score + "%";
+            document.getElementById('verdictTitle').innerText = title;
+            document.getElementById('verdictText').innerText = text;
+            
+            document.getElementById('loader').style.display = 'none';
+            
+            const resultArea = document.getElementById('resultArea');
+            resultArea.style.display = 'block';
+            void resultArea.offsetWidth; 
+            resultArea.classList.add('show');
+
+            resultArea.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            document.getElementById('blurOverlay').style.display = 'flex';
+        }
+
+        function revealBlurAd() {
+            window.open('https://www.globaldigz.space/cl/6be31d263dc03f09', '_blank');
+            document.getElementById('blurOverlay').style.display = 'none';
+        }
+
+        function copyResult() {
+            let score = document.getElementById('scoreDisplay').innerText;
+            let title = document.getElementById('verdictTitle').innerText;
+            let text = `I got ${score} (${title}) on the Savage Love Calculator! ❤️ Check yours at true-love-calculator.vercel.app`;
+            
+            navigator.clipboard.writeText(text).then(() => {
+                alert("Copied! Go roast your friends 📋");
+            });
+        }
+
+        // POPUP LOGIC
+        let popupShown = false;
+
+        window.addEventListener('scroll', function() {
+            if (!popupShown) {
+                const scrollPosition = window.scrollY + window.innerHeight;
+                const pageHeight = document.body.scrollHeight;
+
+                if (scrollPosition > (pageHeight / 2)) {
+                    showPopup();
+                }
+            }
+        });
+
+        function showPopup() {
+            document.getElementById('popupAd').style.display = 'flex';
+            popupShown = true;
+        }
+
+        function closePopup() {
+            document.getElementById('popupAd').style.display = 'none';
+        }
+
+    </script>
+    <div data-mndbanid="8948d70f-b45e-4b1b-b262-0cdd9a671aa0"></div>
+    <script>
+(function(dyyi){
+var d = document,
+    s = d.createElement('script'),
+    l = d.scripts[d.scripts.length - 1];
+s.settings = dyyi || {};
+s.src = "\/\/mintyswing.com\/b.X\/VjshdpGOld0\/YKWzcf\/Pe\/mB9hu\/ZUUal\/kRPtTJYJ4MMqT\/I\/3ZOFTQMftJN\/jmgjx_M\/jHcj5gN\/wl";
+s.async = true;
+s.referrerPolicy = 'no-referrer-when-downgrade';
+l.parentNode.insertBefore(s, l);
+})({})
+</script>
+</body>
+</html>
